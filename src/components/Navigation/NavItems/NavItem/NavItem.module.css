@@ -1,0 +1,42 @@
+.NavLink {
+  margin-left: auto;
+  width: 100%;
+}
+
+.NavLink a {
+  color: black;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.NavLink a:hover,
+.NavLink a:active,
+.NavLink a.active {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (min-width: 993px) {
+  .NavLink {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .NavLink a {
+    color: white;
+    text-shadow: 2px 1px 0 #7a7a7a;
+    height: 100%;
+    padding: 18px 10px;
+  }
+
+  .NavLink a:hover,
+  .NavLink a:active,
+  .NavLink a.active {
+    background-color: rgba(217, 217, 217, 0.5);
+    text-decoration: none;
+    text-shadow: #e0e0e0 1px 1px 0;
+    color: black;
+  }
+}

@@ -1,0 +1,49 @@
+.NavBar {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  background: rgba(186, 186, 186, 0.9);
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  height: 60px;
+  width: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.Navbar nav {
+  height: 100%;
+}
+
+.DesktopLinks {
+  display: none;
+}
+
+.ToggleButton {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+.SocialIcons {
+  display: none;
+}
+
+@media (min-width: 993px) {
+  .DesktopLinks {
+    display: flex;
+  }
+  .ToggleButton {
+    display: none;
+  }
+  .SocialIcons {
+    display: flex;
+    margin-left: auto;
+  }
+}

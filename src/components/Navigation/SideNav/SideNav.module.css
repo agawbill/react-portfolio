@@ -1,0 +1,40 @@
+.SideNav {
+  display: flex;
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  /* margin: -100 0 0 0; */
+  max-width: 70%;
+  right: 214px;
+  left: auto;
+  top: 0;
+  z-index: 300;
+  background-color: white;
+  padding: 32px 16px;
+
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+
+.ToggleButton {
+  margin-top: -20px;
+  margin-right: -3vw;
+  margin-left: 3vw;
+  cursor: pointer;
+}
+
+@media (min-width: 993px) {
+  .SideNav {
+    display: none;
+  }
+}
+
+.Open {
+  transform: translate(100%, 0);
+  /* transform: translate(-100%); */
+}
+
+.Close {
+  transform: translateX(200%);
+}

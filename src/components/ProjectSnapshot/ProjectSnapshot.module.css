@@ -1,0 +1,63 @@
+.ProjectSnapshot {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+}
+
+.ProjectSnapshotIndicator {
+  height: 100%;
+  width: 10px;
+  background-color: #363699;
+  order: 2;
+  transition: background-color 0.3s ease-out;
+  /* cursor: inherit; */
+}
+
+.ProjectBody {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  order: 1;
+  /* cursor: inherit; */
+}
+
+.ProjectTitleText {
+  text-align: center;
+  word-break: break-all;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(192, 192, 192, 0.7);
+  margin-bottom: 10px;
+  /* cursor: inherit; */
+}
+
+.ProjectTitleText span {
+  color: gold;
+  text-shadow: black 1px 1px 0;
+  /* cursor: inherit; */
+}
+.ProjectDescText {
+  text-align: center;
+  word-break: break-all;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: rgba(192, 192, 192, 0.7);
+  margin: 0 auto;
+  /* cursor: inherit; */
+}
+
+.ProjectDescText span {
+  color: white;
+  text-shadow: black 1px 1px 0;
+  /* cursor: inherit; */
+}
+
+.ProjectSnapshot:hover .ProjectSnapshotIndicator {
+  background-color: #e3b130;
+}

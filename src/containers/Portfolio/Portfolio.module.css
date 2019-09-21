@@ -1,0 +1,104 @@
+.Portfolio {
+}
+
+.Banner {
+  position: relative;
+  max-width: 100%;
+  position: relative;
+  height: 45vh;
+  max-height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.About {
+  width: 100%;
+  height: 100%;
+}
+
+.About * {
+  opacity: 0.9;
+}
+
+.About div {
+  position: absolute;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.7);
+  top: 49%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-49%);
+  margin: 0 auto;
+  height: 39vh;
+  width: 95%;
+  border-radius: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.About div::-webkit-scrollbar {
+  background-color: transparent;
+}
+.About div::-webkit-scrollbar-arrow {
+  background-color: black;
+}
+.About div::-webkit-scrollbar-button:vertical:increment {
+  background-color: gold;
+}
+.About div::-webkit-scrollbar-button:vertical:decrement {
+  background-color: gold;
+}
+
+.About img {
+  border-radius: 30px;
+  padding-right: 15px;
+  float: left;
+  height: 50%;
+  width: 50%;
+}
+
+.About span {
+  opacity: 1;
+  color: white;
+}
+
+.About b {
+  color: gold;
+}
+
+.About h1 {
+  text-align: center;
+  color: gold;
+}
+@media (min-width: 769px) {
+  .About img {
+    height: 50%;
+    width: 30%;
+  }
+}
+@media (min-width: 770px) {
+  .About img {
+    height: 50%;
+    width: 30%;
+  }
+}
+@media (min-width: 800px) {
+  .About img {
+    height: 50%;
+    width: 30%;
+  }
+}
+@media (min-width: 900px) {
+  .About img {
+    height: 50%;
+    width: 26%;
+  }
+}
+@media (min-width: 1000px) {
+  .About img {
+    height: 50%;
+    width: 20%;
+  }
+}

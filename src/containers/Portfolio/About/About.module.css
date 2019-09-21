@@ -1,0 +1,97 @@
+.About {
+}
+
+.About img {
+  margin-right: 10px;
+  float: left;
+}
+
+.AboutLanding {
+  width: 100%;
+  height: 100%;
+}
+
+.AboutLanding * {
+  opacity: 0.9;
+}
+
+.AboutLanding div {
+  position: absolute;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.7);
+  top: 49%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-49%);
+  margin: 0 auto;
+  height: 39vh;
+  width: 95%;
+  border-radius: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.AboutLanding div::-webkit-scrollbar {
+  background-color: transparent;
+}
+.AboutLanding div::-webkit-scrollbar-arrow {
+  background-color: black;
+}
+.AboutLanding div::-webkit-scrollbar-button:vertical:increment {
+  background-color: gold;
+}
+.AboutLanding div::-webkit-scrollbar-button:vertical:decrement {
+  background-color: gold;
+}
+
+.AboutLanding img {
+  border-radius: 30px;
+  padding-right: 15px;
+  float: left;
+  height: 50%;
+  width: 50%;
+}
+
+.AboutLanding span {
+  opacity: 1;
+  color: white;
+}
+
+.AboutLanding b {
+  color: gold;
+}
+
+.AboutLanding h1 {
+  text-align: center;
+  color: gold;
+}
+@media (min-width: 769px) {
+  .AboutLanding img {
+    height: 50%;
+    width: 30%;
+  }
+}
+@media (min-width: 770px) {
+  .AboutLanding img {
+    height: 50%;
+    width: 30%;
+  }
+}
+@media (min-width: 800px) {
+  .AboutLanding img {
+    height: 50%;
+    width: 30%;
+  }
+}
+@media (min-width: 900px) {
+  .AboutLanding img {
+    height: 50%;
+    width: 26%;
+  }
+}
+@media (min-width: 1000px) {
+  .AboutLanding img {
+    height: 50%;
+    width: 20%;
+  }
+}
