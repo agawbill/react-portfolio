@@ -11,7 +11,7 @@ import { Col, Row } from "react-bootstrap";
 const Landing = props => {
   const posts = useSelector(state => state.blogs.posts);
   const projects = useSelector(state => state.projects.projects);
-  const aboutData = useSelector(state => state.content.aboutData);
+  const about = useSelector(state => state.content.aboutData);
 
   return (
     <>
@@ -21,7 +21,7 @@ const Landing = props => {
             className={styles.Banner}
             style={{ backgroundImage: `url(${banner})` }}
           >
-            <AboutLanding imageUrl={aboutData.images[0].url} />
+            <AboutLanding imageUrl={about.images[0].url} />
           </div>
         </Col>
       </Row>
