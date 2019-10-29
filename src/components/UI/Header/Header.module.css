@@ -1,0 +1,22 @@
+.Header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Icon {
+  font-size: 35px;
+  color: darkblue;
+}
+
+.Header1 {
+  padding-left: 5px;
+}
+
+.Header2 {
+  color: #383838;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  width: 100%;
+}

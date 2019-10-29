@@ -1,0 +1,49 @@
+.BlogPost {
+}
+
+.BlogPost h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.BlogPost a {
+  color: #363699;
+}
+
+.Headline {
+  font-weight: bold;
+  padding-left: 1px;
+
+  margin-bottom: 1px;
+}
+
+.Share {
+  /* float: left; */
+}
+
+.Share span {
+  /* order: 2; */
+}
+
+.Share div {
+}
+
+.BlogPost a:hover {
+  color: darkblue;
+}
+
+.BlogPost img {
+  align-self: center;
+  border-radius: 5px;
+}
+
+.DateName {
+  color: #606060;
+  /* text-shadow: #e0e0e0 1px 1px 0; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.NameHighlight {
+  color: silver;
+}

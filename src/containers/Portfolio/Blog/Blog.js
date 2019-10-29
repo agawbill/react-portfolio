@@ -1,11 +1,15 @@
 import React from "react";
-import PostSnapshot from "../../../components/PostSnapshot/PostSnapshot";
+import { useSelector } from "react-redux";
+import Header from "../../../components/UI/Header/Header";
+import PostSnapshots from "../../../components/PostSnapshots/PostSnapshots";
 
 const Blog = props => {
+  const posts = useSelector(state => state.blogs.posts);
+
   return (
     <>
-      <h2>Blog</h2>
-      <PostSnapshot />
+      <Header type="blogs" title=" Blogs" />
+      <PostSnapshots posts={posts} />
     </>
   );
 };

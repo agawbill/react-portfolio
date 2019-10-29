@@ -1,0 +1,11 @@
+.Projects {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 995px) {
+  .Projects {
+    flex-flow: row;
+  }
+}

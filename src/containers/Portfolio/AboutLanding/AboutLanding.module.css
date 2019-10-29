@@ -1,0 +1,81 @@
+.AboutLanding {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.AboutLanding img {
+  border-radius: 5%;
+  margin-right: 15px;
+  float: left;
+  height: 240px;
+  width: auto;
+  opacity: 1;
+}
+
+.AboutLanding span {
+  padding: 10px;
+  overflow-y: auto;
+  color: white;
+  background: rgba(192, 192, 192, 0.8);
+  font-family: Helvetica;
+  text-shadow: #2e2e2e 0 4px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  position: absolute;
+  font-size: 17px;
+  width: 97%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.AboutLanding strong {
+  color: gold;
+}
+
+.AboutLanding b {
+  color: darkblue;
+  text-shadow: none;
+}
+
+.AboutLanding h1 {
+  text-align: center;
+  color: gold;
+}
+
+.Fade {
+  height: 0px;
+  top: -100px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.FadeIn {
+  top: 100px;
+  height: auto;
+  opacity: 1;
+}
+
+@media (min-width: 422px) {
+  .AboutLanding span {
+    font-size: 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 518px) {
+  .AboutLanding span {
+    font-size: 20px;
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .AboutLanding span {
+    font-size: 25px;
+    width: 80%;
+  }
+}

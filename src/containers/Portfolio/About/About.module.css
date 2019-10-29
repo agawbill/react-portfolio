@@ -1,6 +1,10 @@
 .About {
 }
 
+.About b {
+  color: gold;
+}
+
 .About img {
   margin-right: 10px;
   float: left;
@@ -57,7 +61,7 @@
   color: white;
 }
 
-.AboutLanding b {
+.AboutLanding strong {
   color: gold;
 }
 

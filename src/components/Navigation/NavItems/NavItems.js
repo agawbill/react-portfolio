@@ -5,12 +5,24 @@ import NavItem from "./NavItem/NavItem";
 const NavItems = props => {
   return (
     <ul className={styles.NavItems}>
-      <NavItem link="/">Home</NavItem>
-      <NavItem link="/about">About</NavItem>
-      <NavItem link="/blog">Blog</NavItem>
-      <NavItem link="/projects">Projects</NavItem>
-      <NavItem link="/resume">Resume</NavItem>
-      <NavItem link="/contact">Contact</NavItem>
+      <NavItem close={props.close} link="/">
+        Home
+      </NavItem>
+      <NavItem close={props.close} link="/about">
+        About
+      </NavItem>
+      <NavItem close={props.close} link="/blog">
+        Blog
+      </NavItem>
+      <NavItem close={props.close} link="/projects">
+        Projects
+      </NavItem>
+      <NavItem close={props.close} link="/resume">
+        Resume
+      </NavItem>
+      <NavItem close={props.close} link="/contact">
+        Contact
+      </NavItem>
     </ul>
   );
 };

@@ -3,7 +3,7 @@ import styles from "./NavBar.module.css";
 import NavBanner from "../NavBanner/NavBanner";
 import NavItems from "../NavItems/NavItems";
 import SocialIcons from "../../UI/SocialIcons/SocialIcons";
-import ToggleButton from "../../UI/ToggleButton/ToggleButton";
+import ToggleButton from "../../UI/Buttons/ToggleButton/ToggleButton";
 
 const NavBar = props => {
   return (

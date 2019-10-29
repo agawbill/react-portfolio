@@ -2,9 +2,19 @@
   display: flex;
   align-items: center;
   flex-flow: row;
-  width: 100%;
+  width: inherit;
   height: 200px;
+  margin-bottom: 25px;
   cursor: pointer;
+  /* border: 1px solid #636363; */
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.WidthLanding {
+  width: 100%;
+}
+.WidthProjects {
+  width: 100%;
 }
 
 .ProjectSnapshotIndicator {
@@ -13,6 +23,8 @@
   background-color: #363699;
   order: 2;
   transition: background-color 0.3s ease-out;
+  box-sizing: border-box;
+  /* border-left: 1px solid #636363; */
   /* cursor: inherit; */
 }
 
@@ -53,11 +65,19 @@
 }
 
 .ProjectDescText span {
-  color: white;
-  text-shadow: black 1px 1px 0;
+  color: black;
+  text-shadow: white 1px 1px 0;
   /* cursor: inherit; */
 }
 
 .ProjectSnapshot:hover .ProjectSnapshotIndicator {
   background-color: #e3b130;
+}
+
+@media (min-width: 995px) {
+  .WidthProjects {
+    margin: 15px;
+
+    width: 30%;
+  }
 }

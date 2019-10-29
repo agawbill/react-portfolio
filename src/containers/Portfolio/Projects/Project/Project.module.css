@@ -1,0 +1,46 @@
+.Project {
+}
+
+.ProjectContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+.ProjectDescription {
+  width: 100%;
+
+  margin-right: 19px;
+}
+
+.ProjectGallery {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 150px;
+  white-space: nowrap;
+}
+
+.ProjectGallery span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ProjectVideo {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 10%;
+}
+
+@media (min-width: 1200px) {
+  .ProjectDescription {
+    order: 1;
+    width: 60%;
+  }
+  .ProjectContainer {
+    flex-flow: row;
+  }
+  .ProjectGallery {
+    all: initial;
+    width: 40%;
+    order: 2;
+  }
+}

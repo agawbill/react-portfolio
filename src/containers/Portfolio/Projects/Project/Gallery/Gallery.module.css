@@ -1,0 +1,12 @@
+.Gallery {
+}
+
+.Gallery img {
+  cursor: pointer;
+  height: 120px;
+  width: 210px;
+}
+
+.Gallery img:hover {
+  opacity: 0.5;
+}

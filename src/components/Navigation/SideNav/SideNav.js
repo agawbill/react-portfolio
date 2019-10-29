@@ -1,6 +1,6 @@
 import React from "react";
 import Backdrop from "../../UI/Backdrop/Backdrop";
-import ToggleButton from "../../UI/ToggleButton/ToggleButton";
+import ToggleButton from "../../UI/Buttons/ToggleButton/ToggleButton";
 import NavItems from "../NavItems/NavItems";
 import SocialIcons from "../../UI/SocialIcons/SocialIcons";
 import styles from "./SideNav.module.css";
@@ -12,11 +12,11 @@ const SideNav = props => {
   }
   return (
     <>
-      <Backdrop open={props.open} closeDrawer={props.closeDrawer} />
+      <Backdrop open={props.open} close={props.closeDrawer} />
       <div className={classes.join("  ")}>
         <nav>
-          <NavItems />
-          <SocialIcons size="1x" />
+          <NavItems close={props.closeDrawer} />
+          <SocialIcons size="lg" />
         </nav>
         <div className={styles.ToggleButton}>
           <ToggleButton open={props.open} toggleDrawer={props.closeDrawer} />

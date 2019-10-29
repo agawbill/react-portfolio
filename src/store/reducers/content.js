@@ -1,0 +1,53 @@
+import * as actionTypes from "../actions/actionTypes";
+
+const initialState = {
+  sections: [],
+  aboutData: null,
+  contactData: null,
+  loading: false
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case actionTypes.FETCH_CONTENT_START:
+      return {
+        ...state,
+        loading: true
+      };
+    case actionTypes.FETCH_CONTENT_FAIL:
+      return {
+        ...state,
+        loading: false
+      };
+    case actionTypes.FETCH_CONTENT_SUCCESS:
+      return {
+        ...state,
+        loading: false
+      };
+    case actionTypes.HYDRATE_SECTIONS:
+      return {
+        ...state,
+        sections: [...action.sections]
+      };
+    case actionTypes.SET_ABOUT:
+      const about = state.sections.find(
+        section => section.title === "About me"
+      );
+      return {
+        ...state,
+        aboutData: about
+      };
+    case actionTypes.SET_CONTACT:
+      const contact = state.sections.find(
+        section => section.title === "Contact"
+      );
+      return {
+        ...state,
+        contactData: contact
+      };
+    default:
+      return state;
+  }
+};
+
+export default reducer;
