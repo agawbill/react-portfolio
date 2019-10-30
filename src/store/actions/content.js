@@ -8,6 +8,7 @@ export const fetchContent = () => {
   return async dispatch => {
     const strapi = new Strapi(keys.strapiURL);
     console.log(keys.strapiURL);
+    console.log(process.env.NODE_ENV);
 
     try {
       await dispatch(fetchContentStart());
