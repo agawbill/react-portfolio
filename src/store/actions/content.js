@@ -7,6 +7,8 @@ import { hydrateBlogs, hydrateProjects } from "./index";
 export const fetchContent = () => {
   return async dispatch => {
     const strapi = new Strapi(keys.strapiURL);
+    console.log(keys.strapiURL);
+
     try {
       await dispatch(fetchContentStart());
       const [postsData, projectsData, sectionsData] = await Promise.all([
