@@ -17,7 +17,7 @@ const Gallery = props => {
     );
     const max = {
       image: props.images[props.images.length - 1],
-      index: props.images.length - 1
+      imageIndex: props.images.length - 1
     };
     if (
       selectedImageIndex > 0 &&
@@ -39,7 +39,7 @@ const Gallery = props => {
     );
     console.log(selectedImageIndex);
 
-    const min = { image: props.images[0], index: 0 };
+    const min = { image: props.images[0], imageIndex: 0 };
     if (
       selectedImageIndex >= 0 &&
       selectedImageIndex < props.images.length - 1
