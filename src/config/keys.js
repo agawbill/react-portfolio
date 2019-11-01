@@ -1,7 +1,7 @@
 import { dev } from "./dev";
 import { prod } from "./prod";
 
-export let keys;
+let keys;
 
 if (process.env.NODE_ENV === "production") {
   keys = prod;
@@ -9,4 +9,4 @@ if (process.env.NODE_ENV === "production") {
   keys = dev;
 }
 
-return keys;
+export default keys;
