@@ -61,6 +61,8 @@ const Gallery = props => {
 
   const projectImages = props.images.map((image, index) => {
     const imageIdentifier = { image, imageIndex: index };
+    console.log(imageIdentifier);
+
     return (
       <img
         src={image.url}
