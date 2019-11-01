@@ -45,7 +45,7 @@ const Gallery = props => {
       selectedImageIndex < props.images.length - 1
     ) {
       const imageIdentifier = {
-        image: props.images[selectedImage.imageIndex - 1],
+        image: props.images[selectedImage.imageIndex + 1],
         imageIndex: selectedImage.imageIndex + 1
       };
       console.log(imageIdentifier);
