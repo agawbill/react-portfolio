@@ -20,7 +20,7 @@ const Gallery = props => {
       selectedImageIndex > 0 &&
       selectedImageIndex <= props.images.length - 1
     ) {
-      setSelectedImage(props.images[selectedImage.imageIdentifier + 1]);
+      setSelectedImage(props.images[selectedImage.imageIndex + 1]);
     } else if (selectedImageIndex === 0) {
       setSelectedImage(max);
     }
@@ -35,7 +35,7 @@ const Gallery = props => {
       selectedImageIndex >= 0 &&
       selectedImageIndex < props.images.length - 1
     ) {
-      setSelectedImage(props.images[selectedImage.imageIdentifier - 1]);
+      setSelectedImage(props.images[selectedImage.imageIndex - 1]);
     } else if (selectedImageIndex === props.images.length - 1) {
       setSelectedImage(min);
     }
