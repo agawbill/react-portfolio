@@ -16,7 +16,7 @@ const reducer = (state = initialState, action) => {
       console.log(action.projectId);
 
       const project = state.projects.find(
-        project => project.id === parseInt(action.projectId)
+        project => project.id === action.projectId
       );
       console.log(project);
 
