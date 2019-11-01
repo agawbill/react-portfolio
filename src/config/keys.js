@@ -1,4 +1,12 @@
 import { dev } from "./dev";
 import { prod } from "./prod";
 
-export const keys = process.env.NODE_ENV === "production" ? prod : dev;
+export let keys;
+
+if (process.env.NODE_ENV === "production") {
+  keys = prod;
+} else {
+  keys = dev;
+}
+
+return keys;
