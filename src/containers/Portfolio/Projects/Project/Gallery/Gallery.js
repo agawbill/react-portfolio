@@ -15,7 +15,6 @@ const Gallery = props => {
     const selectedImageIndex = props.images.findIndex(
       image => image.id === selectedImage.image.id
     );
-    console.log(selectedImageIndex);
     const max = {
       image: props.images[props.images.length - 1],
       imageIndex: props.images.length - 1
@@ -28,9 +27,6 @@ const Gallery = props => {
         image: props.images[selectedImage.imageIndex - 1],
         imageIndex: selectedImage.imageIndex - 1
       };
-      console.log(imageIdentifier);
-      console.log(max);
-
       setSelectedImage(imageIdentifier);
     } else if (selectedImageIndex === 0) {
       setSelectedImage(max);
@@ -41,7 +37,6 @@ const Gallery = props => {
     const selectedImageIndex = props.images.findIndex(
       image => image.id === selectedImage.image.id
     );
-
     const min = { image: props.images[0], imageIndex: 0 };
     if (
       selectedImageIndex >= 0 &&
@@ -51,7 +46,6 @@ const Gallery = props => {
         image: props.images[selectedImage.imageIndex + 1],
         imageIndex: selectedImage.imageIndex + 1
       };
-
       setSelectedImage(imageIdentifier);
     } else if (selectedImageIndex === props.images.length - 1) {
       setSelectedImage(min);
@@ -65,7 +59,6 @@ const Gallery = props => {
   let imageViewer = null;
 
   if (openViewer) {
-    console.log(selectedImage.image.url);
     imageViewer = (
       <Viewer
         image={selectedImage.image.url}
@@ -79,8 +72,6 @@ const Gallery = props => {
 
   const projectImages = props.images.map((image, index) => {
     const imageIdentifier = { image, imageIndex: index };
-    console.log(imageIdentifier);
-
     return (
       <img
         src={image.url}

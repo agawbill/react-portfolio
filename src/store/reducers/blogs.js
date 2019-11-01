@@ -13,9 +13,7 @@ const reducer = (state = initialState, action) => {
         posts: [...action.blogs]
       };
     case actionTypes.FIND_BLOG:
-      const post = state.posts.find(
-        post => post.id === parseInt(action.blogId)
-      );
+      const post = state.posts.find(post => post.id === action.blogId);
       return {
         ...state,
         currentPost: post
