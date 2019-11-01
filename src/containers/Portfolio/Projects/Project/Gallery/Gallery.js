@@ -15,10 +15,7 @@ const Gallery = props => {
     const min = props.images[0];
     const max = props.images[props.images.length - 1];
     if (selectedImage.id > min.id && selectedImage.id <= max.id) {
-      const newImage = props.images.find(
-        image => image.id === selectedImage.id - 1
-      );
-      setSelectedImage(newImage);
+      setSelectedImage(props.images[selectedImage.imageIdentifier + 1]);
     } else if (selectedImage.id === min.id) {
       setSelectedImage(max);
     }
@@ -28,10 +25,7 @@ const Gallery = props => {
     const min = props.images[0];
     const max = props.images[props.images.length - 1];
     if (selectedImage.id >= min.id && selectedImage.id < max.id) {
-      const newImage = props.images.find(
-        image => image.id === selectedImage.id + 1
-      );
-      setSelectedImage(newImage);
+      setSelectedImage(props.images[selectedImage.imageIdentifier - 1]);
     } else if (selectedImage.id === max.id) {
       setSelectedImage(min);
     }
@@ -46,7 +40,7 @@ const Gallery = props => {
   if (openViewer) {
     imageViewer = (
       <Viewer
-        image={selectedImage.url}
+        image={selectedImage.image.url}
         open={openViewer}
         close={viewerHandler}
         previous={prevHandler}
@@ -55,14 +49,17 @@ const Gallery = props => {
     );
   }
 
-  const projectImages = props.images.map(image => (
-    <img
-      src={image.url}
-      key={image.id}
-      onClick={() => selectHandler(image)}
-      alt="project"
-    />
-  ));
+  const projectImages = props.images.map((image, index) => {
+    const imageIdentifier = { image, imageIndex: index };
+    return (
+      <img
+        src={image.url}
+        key={image.id}
+        onClick={() => selectHandler(imageIdentifier)}
+        alt="project"
+      />
+    );
+  });
 
   return (
     <>
