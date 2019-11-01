@@ -12,21 +12,31 @@ const Gallery = props => {
   };
 
   const prevHandler = () => {
-    const min = props.images[0];
+    const selectedImageIndex = props.images.findIndex(
+      image => image.id === selectedImage.image.id
+    );
     const max = props.images[props.images.length - 1];
-    if (selectedImage.id > min.id && selectedImage.id <= max.id) {
+    if (
+      selectedImageIndex > 0 &&
+      selectedImageIndex <= props.images.length - 1
+    ) {
       setSelectedImage(props.images[selectedImage.imageIdentifier + 1]);
-    } else if (selectedImage.id === min.id) {
+    } else if (selectedImageIndex === 0) {
       setSelectedImage(max);
     }
   };
 
   const nextHandler = () => {
+    const selectedImageIndex = props.images.findIndex(
+      image => image.id === selectedImage.image.id
+    );
     const min = props.images[0];
-    const max = props.images[props.images.length - 1];
-    if (selectedImage.id >= min.id && selectedImage.id < max.id) {
+    if (
+      selectedImageIndex >= 0 &&
+      selectedImageIndex < props.images.length - 1
+    ) {
       setSelectedImage(props.images[selectedImage.imageIdentifier - 1]);
-    } else if (selectedImage.id === max.id) {
+    } else if (selectedImageIndex === props.images.length - 1) {
       setSelectedImage(min);
     }
   };
