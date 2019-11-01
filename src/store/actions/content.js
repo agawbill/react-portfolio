@@ -1,5 +1,5 @@
 import * as actionTypes from "./actionTypes";
-import { keys } from "../../config/keys";
+import keys from "../../config/keys";
 import Strapi from "strapi-sdk-javascript";
 import { interceptor } from "../../hoc/withErrorHandler";
 import { hydrateBlogs, hydrateProjects } from "./index";
