@@ -48,6 +48,9 @@ const Gallery = props => {
         image: props.images[selectedImage.imageIndex - 1],
         imageIndex: selectedImage.imageIndex + 1
       };
+      console.log(imageIdentifier);
+      console.log(min);
+
       setSelectedImage(imageIdentifier);
     } else if (selectedImageIndex === props.images.length - 1) {
       setSelectedImage(min);
@@ -61,6 +64,7 @@ const Gallery = props => {
   let imageViewer = null;
 
   if (openViewer) {
+    console.log(selectedImage.image.url);
     imageViewer = (
       <Viewer
         image={selectedImage.image.url}
