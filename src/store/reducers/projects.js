@@ -13,9 +13,13 @@ const reducer = (state = initialState, action) => {
         projects: [...action.projects]
       };
     case actionTypes.FIND_PROJECT:
+      console.log(action.projectId);
+
       const project = state.projects.find(
         project => project.id === parseInt(action.projectId)
       );
+      console.log(project);
+
       return {
         ...state,
         currentProject: project

@@ -16,6 +16,8 @@ const Project = props => {
   useEffect(() => {
     const searchParams = new URLSearchParams(`${props.location.search}`);
     const id = searchParams.get("id");
+    console.log(id);
+
     dispatch(actions.findProject(id));
 
     return () => dispatch(actions.resetProject());
