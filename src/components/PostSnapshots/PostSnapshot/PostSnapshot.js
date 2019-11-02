@@ -7,12 +7,6 @@ const PostSnapshot = props => {
 
   return (
     <div className={styles.PostSnapshot} onClick={props.clicked}>
-      <div
-        className={styles.PostSnapshotImage}
-        style={{
-          backgroundImage: `url(${props.image})`
-        }}
-      />
       <div className={styles.PostSnapshotIndicator} />
       <div
         className={styles.PostBody}

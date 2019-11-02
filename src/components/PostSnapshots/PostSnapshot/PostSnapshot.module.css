@@ -13,13 +13,14 @@
 
 .PostSnapshotOverlay {
   background: rgba(192, 192, 192, 0.7);
+  padding: 5px;
+  height: 95%;
   position: absolute;
   font-size: 17px;
   width: 97%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  /* border-radius: 8px; */
 }
 
 .PostSnapshot h6 {
@@ -35,15 +36,11 @@
   font-size: 24px;
   text-shadow: #000000 1px 1px 0;
   text-align: center;
-  /* background: rgba(192, 192, 192, 0.7); */
-  /* padding: 10px; */
   font-weight: bold;
 }
 
 .PostSnapshot h3 {
   text-align: center;
-  /* background: rgba(192, 192, 192, 0.7); */
-  /* padding: 10px; */
   font-size: 30px;
   font-weight: bold;
 }
@@ -86,7 +83,6 @@
 
 .PostHeadline {
   text-align: center;
-  /* background: rgba(192, 192, 192, 0.7); */
   padding: 1px;
   color: bkack;
   text-shadow: #e0e0e0 1px 1px 0;
@@ -96,7 +92,6 @@
 
 .DateName {
   text-align: center;
-  /* background: rgba(192, 192, 192, 0.7); */
   color: black;
   text-shadow: #e0e0e0 1px 1px 0;
   font-weight: bold;
@@ -108,22 +103,6 @@
 .PostSnapshot:hover .PostSnapshotIndicator {
   background-color: #e3b130;
 }
-
-/* @media (min-width: 430px) {
-  .PostHeadline {
-    font-size: 22px;
-  }
-  .PostSnapshot h3 {
-    font-size: 30px;
-  }
-
-  .DateName {
-    font-size: 15px;
-  }
-  .Category {
-    font-size: 24px;
-  }
-} */
 
 @media (min-width: 768px) {
   .PostSnapshot {
@@ -140,9 +119,7 @@
     text-align: left;
     background: none;
   }
-  .PostSnapshotOverlay {
-    all: unset;
-  }
+
   .DateName {
     position: absolute;
     bottom: 0;
@@ -163,18 +140,11 @@
     text-align: left;
     padding: 0px;
     display: block;
-    color: #484848;
+    color: black;
     background: none;
   }
-  .PostSnapshotImage {
-    display: block;
-    height: auto;
-    width: 260px;
-  }
-  .PostBody {
-    background-image: none !important;
-  }
+
   .PostSnapshotIndicator {
-    width: 15px;
+    width: 10px;
   }
 }
