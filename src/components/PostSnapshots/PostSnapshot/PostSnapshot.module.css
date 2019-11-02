@@ -23,6 +23,10 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+.PostSnapshotText {
+  display: none;
+}
+
 .PostSnapshot h6 {
   display: none;
 }
@@ -40,12 +44,7 @@
 }
 
 .PostSnapshot h3 {
-  text-shadow: #2e2e2e 0 4px 5px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
-  color: gold;
+  color: black;
   border: 0px;
   text-align: center;
   font-size: 30px;
@@ -122,6 +121,12 @@
     background: none;
   }
   .PostSnapshot h3 {
+    text-shadow: #2e2e2e 0 4px 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
+    color: gold;
     margin-bottom: 15px;
     padding: 0px;
     text-align: left;
