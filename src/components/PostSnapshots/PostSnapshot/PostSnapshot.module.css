@@ -40,6 +40,13 @@
 }
 
 .PostSnapshot h3 {
+  text-shadow: #2e2e2e 0 4px 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
+  color: gold;
+  border: 0px;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -141,7 +148,6 @@
     text-align: left;
     font-size: 15px;
     padding: 0px;
-    font-weight: bold;
     display: block;
     color: black;
     text-shadow: #e0e0e0 1px 1px 0;
