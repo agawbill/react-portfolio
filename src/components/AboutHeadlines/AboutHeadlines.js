@@ -6,9 +6,8 @@ const AboutHeadlines = props => {
     <span>
       <img src={props.imageUrl} align="left" alt="portrait of me" />{" "}
       <strong>
-        <i>Hi!</i>
+        <i>Hi! </i>
       </strong>
-      <br />
       My name is
       <strong>
         <i> Anthony Gawbill</i>
