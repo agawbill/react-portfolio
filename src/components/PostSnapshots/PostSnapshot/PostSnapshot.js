@@ -20,9 +20,9 @@ const PostSnapshot = props => {
             <ReactMarkdown source={props.headline} />
           </h4>
 
-          <h6>
+          <span className={styles.PostSnapshotText}>
             <ReactMarkdown source={`${props.body.substring(0, 180)}...`} />
-          </h6>
+          </span>
 
           <div className={styles.DateName}>
             {props.user} | {date.toDateString()}
