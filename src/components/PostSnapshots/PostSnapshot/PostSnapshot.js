@@ -27,7 +27,7 @@ const PostSnapshot = props => {
           </h4>
 
           <h6>
-            <ReactMarkdown source={`${props.body.substring(0, 200)}...`} />
+            <ReactMarkdown source={`${props.body.substring(0, 180)}...`} />
           </h6>
 
           <div className={styles.DateName}>
