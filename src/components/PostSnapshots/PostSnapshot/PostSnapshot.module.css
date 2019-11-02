@@ -111,6 +111,7 @@
   .PostHeadline {
     padding: 0px;
     text-align: left;
+    text-shadow: #e0e0e0 1px 1px 0;
     background: none;
   }
   .PostSnapshot h3 {
