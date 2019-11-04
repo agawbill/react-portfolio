@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Redirect } from "react-router-dom";
 import * as actions from "../../../../store/actions";
 import Spinner from "../../../../components/UI/Spinner/Spinner";
 import styles from "./BlogPost.module.css";
@@ -14,9 +15,13 @@ const BlogPost = props => {
   useEffect(() => {
     const searchParams = new URLSearchParams(`${props.location.search}`);
     const id = searchParams.get("id");
+    if (!id) {
+      props.history.push("/");
+    }
     dispatch(actions.findBlog(id));
+
     return () => dispatch(actions.resetBlog());
-  }, [dispatch, props.location.search, post]);
+  }, [dispatch, props.location.search, props.history, post]);
 
   let postContainer = <Spinner />;
 

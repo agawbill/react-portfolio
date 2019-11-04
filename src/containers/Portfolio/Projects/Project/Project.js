@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Redirect } from "react-router-dom";
 import * as actions from "../../../../store/actions";
 import Spinner from "../../../../components/UI/Spinner/Spinner";
 import Gallery from "./Gallery/Gallery";
@@ -16,12 +17,14 @@ const Project = props => {
   useEffect(() => {
     const searchParams = new URLSearchParams(`${props.location.search}`);
     const id = searchParams.get("id");
-    console.log(id);
+    if (!id) {
+      props.history.push("/");
+    }
 
     dispatch(actions.findProject(id));
 
     return () => dispatch(actions.resetProject());
-  }, [dispatch, props.location.search, project]);
+  }, [dispatch, props.location.search, props.history, project]);
 
   let projectBody = <Spinner />;
 
