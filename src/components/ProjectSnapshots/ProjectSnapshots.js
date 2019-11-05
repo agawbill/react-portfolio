@@ -6,7 +6,7 @@ const ProjectSnapshots = props => {
   const projectHandler = (id, slug) => {
     props.history.push({ pathname: `/projects/${slug}`, search: `?id=${id}` });
   };
-  const projectsContainer = props.projects.slice(0, 8).map(project => {
+  const projectsContainer = props.projects.reverse.slice(0, 8).map(project => {
     return (
       <ProjectSnapshot
         image={project.images[0].url}

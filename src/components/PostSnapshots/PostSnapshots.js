@@ -6,7 +6,7 @@ const PostSnapshots = props => {
   const postHandler = (id, slug) => {
     props.history.push({ pathname: `/blog/${slug}`, search: `?id=${id}` });
   };
-  const postsContainer = props.posts.slice(0, 8).map(post => {
+  const postsContainer = props.posts.reverse.slice(0, 8).map(post => {
     return (
       <PostSnapshot
         image={post.images[0].url}
