@@ -31,7 +31,7 @@ const PostSnapshot = props => {
           </h4>
 
           <span className={styles.PostSnapshotText}>
-            <ReactMarkdown source={`${props.body.substring(0, 150)}...`} />
+            <ReactMarkdown source={`${props.body.substring(0, 120)}...`} />
           </span>
         </div>
       </div>
