@@ -21,7 +21,7 @@
   height: 200px;
   cursor: pointer;
   box-sizing: border-box;
-  /* margin-bottom: 25px; */
+  margin-bottom: 25px;
   background-color: white;
   flex-flow: row;
 }
@@ -33,7 +33,7 @@
   /* height: 90%; */
   position: absolute;
   font-size: 17px;
-  width: 70%;
+  width: 85%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -239,6 +239,9 @@
     background: none;
   }
 
+  .PostSnapshotOverlay {
+    width: 75%;
+  }
   .PostSnapshotIndicator {
     width: 10px;
   }
