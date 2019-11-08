@@ -11,19 +11,6 @@
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-.ProjectSnapshotOverlay {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  background: rgba(192, 192, 192, 0.9);
-  padding: 10px;
-  /* height: 90%; */
-  position: absolute;
-  font-size: 17px;
-  width: 85%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .WidthLanding {
   width: 100%;
 }
@@ -53,6 +40,7 @@
 
 .ProjectTitleContainer {
   position: absolute;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   /* font-size: 17px; */
   width: 85%;
   top: 50%;
