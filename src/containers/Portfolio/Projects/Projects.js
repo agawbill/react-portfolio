@@ -17,8 +17,12 @@ const Projects = props => {
   return (
     <>
       <Header type="projects" title=" Projects" />
+      {sectionDescription.content}
+      <hr />
       <div className={styles.Projects}>
         <ProjectSnapshots projects={selectedProjects} />
+        <br />
+        <ProjectSnapshots projects={remainingProjects} />
       </div>
     </>
   );
