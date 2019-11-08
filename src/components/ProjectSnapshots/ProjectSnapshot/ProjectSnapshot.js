@@ -10,7 +10,7 @@ const ProjectSnapshot = props => {
     }
   }
   return (
-    <div style={{ display: "inline-block" }}>
+    <div style={{ display: "flex", flexFlow: "row" }}>
       <div className={classes.join(" ")} onClick={props.clicked}>
         <div className={styles.ProjectSnapshotIndicator} />
         <div
