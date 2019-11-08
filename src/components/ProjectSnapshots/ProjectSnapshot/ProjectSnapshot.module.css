@@ -1,5 +1,6 @@
 .ProjectSnapshot {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-flow: row;
   width: inherit;
@@ -89,7 +90,6 @@
 
 @media (min-width: 995px) {
   .WidthProjects {
-    flex-wrap: wrap;
     margin: 15px;
     width: 33.3%;
   }
