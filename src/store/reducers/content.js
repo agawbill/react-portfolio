@@ -6,7 +6,6 @@ const initialState = {
   contactData: null,
   blogsData: null,
   projectsData: null,
-  selectedProjects: null,
   loading: false
 };
 
@@ -58,12 +57,6 @@ const reducer = (state = initialState, action) => {
       const projects = state.sections.find(
         section => section.title === "Projects"
       );
-
-      const regularProjects = projects.filter(project => {
-        console.log(project);
-
-        return !project.Rank;
-      });
 
       return {
         ...state,
