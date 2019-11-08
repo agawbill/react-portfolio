@@ -10,19 +10,21 @@ const ProjectSnapshot = props => {
     }
   }
   return (
-    <div className={classes.join(" ")} onClick={props.clicked}>
-      <div className={styles.ProjectSnapshotIndicator} />
-      <div
-        className={styles.ProjectBody}
-        style={{ backgroundImage: `url(${props.image})` }}
-      >
-        <div className={styles.ProjectTitleContainer}>
-          <span className={styles.ProjectTitleText}>{props.title}</span>
-          <br />
-          <span className={styles.ProjectDescText}>
-            {props.body.substring(0, 100)}
-            ...
-          </span>
+    <div style={{ display: "inlineBlock" }}>
+      <div className={classes.join(" ")} onClick={props.clicked}>
+        <div className={styles.ProjectSnapshotIndicator} />
+        <div
+          className={styles.ProjectBody}
+          style={{ backgroundImage: `url(${props.image})` }}
+        >
+          <div className={styles.ProjectTitleContainer}>
+            <span className={styles.ProjectTitleText}>{props.title}</span>
+            <br />
+            <span className={styles.ProjectDescText}>
+              {props.body.substring(0, 100)}
+              ...
+            </span>
+          </div>
         </div>
       </div>
     </div>
