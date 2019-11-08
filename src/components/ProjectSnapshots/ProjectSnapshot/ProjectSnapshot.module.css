@@ -51,6 +51,12 @@
 }
 
 .ProjectTitleText {
+  position: absolute;
+  /* font-size: 17px; */
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   text-align: center;
   word-break: break-all;
   padding: 10px;

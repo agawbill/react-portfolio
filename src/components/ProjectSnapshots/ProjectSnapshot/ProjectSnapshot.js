@@ -16,17 +16,16 @@ const ProjectSnapshot = props => {
         className={styles.ProjectBody}
         style={{ backgroundImage: `url(${props.image})` }}
       >
-        <div className={styles.ProjectSnapshotOverlay}>
-          <span className={styles.ProjectTitleText}>{props.title}</span>
+        <div className={styles.ProjectTitleText}>
+          <span>{props.title}</span>
+        </div>
+
+        <div className={styles.ProjectDescText}>
           <span>
             {props.body.substring(0, 100)}
             ...
           </span>
         </div>
-
-        {/* <div className={styles.ProjectDescText}> */}
-
-        {/* </div> */}
       </div>
     </div>
   );
