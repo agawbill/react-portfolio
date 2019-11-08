@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import styles from "./ProjectSnapshots.module.css";
 import ProjectSnapshot from "./ProjectSnapshot/ProjectSnapshot";
 
 const ProjectSnapshots = props => {
@@ -26,7 +27,7 @@ const ProjectSnapshots = props => {
       );
     });
 
-  return <>{projectsContainer}</>;
+  return <div className={styles.ProjectSnapshots}>{projectsContainer}</div>;
 };
 
 export default withRouter(ProjectSnapshots);
