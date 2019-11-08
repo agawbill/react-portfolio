@@ -1,5 +1,5 @@
 .ProjectSnapshot {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   flex-flow: row;
   width: inherit;
@@ -8,6 +8,10 @@
   cursor: pointer;
   /* border: 1px solid #636363; */
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Wrapper {
+  display: inline-block;
 }
 
 .WidthLanding {
