@@ -15,8 +15,8 @@ const Landing = props => {
 
   return (
     <>
-      <Row>
-        <Col>
+      <Row className={styles.NoPadding}>
+        <Col className={styles.NoPadding}>
           <div
             className={styles.Banner}
             style={{ backgroundImage: `url(${banner})` }}

@@ -10,5 +10,18 @@
   background-color: white;
   background-repeat: no-repeat;
   background-position: center center;
-  box-shadow: 0 0 8px 8px white inset;
+}
+
+.NoPadding {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .Banner {
+    box-shadow: 0 0 8px 8px white inset;
+  }
+  .NoPadding {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
