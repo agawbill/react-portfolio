@@ -89,8 +89,8 @@
 
 @media (min-width: 995px) {
   .WidthProjects {
+    flex-flow: row;
     margin: 15px;
-
-    width: 33.3%;
+    width: 33.3s%;
   }
 }
