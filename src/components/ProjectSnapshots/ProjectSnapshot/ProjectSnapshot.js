@@ -18,10 +18,7 @@ const ProjectSnapshot = props => {
       >
         <div className={styles.ProjectTitleText}>
           <span>{props.title}</span>
-        </div>
-
-        <div className={styles.ProjectDescText}>
-          <span>
+          <span className={styles.ProjectDescText}>
             {props.body.substring(0, 100)}
             ...
           </span>
