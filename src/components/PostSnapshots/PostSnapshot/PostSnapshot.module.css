@@ -222,8 +222,8 @@
     /* text-align: none; */
     /* float: right; */
     color: gold;
-    text-shadow: #000000 1px 1px 0;
-    font-weight: bold;
+    text-shadow: #000000 1px 1px 3px;
+    font-weight: bolder;
     background: none;
   }
   .PostSnapshotText {
