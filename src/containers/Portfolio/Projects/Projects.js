@@ -6,7 +6,7 @@ import styles from "./Projects.module.css";
 
 const Projects = props => {
   const sectionDescription = useSelector(
-    state => state.content.projectData.content
+    state => state.content.projectsData.content
   );
   console.log(sectionDescription);
 
