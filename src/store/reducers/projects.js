@@ -3,21 +3,24 @@ import * as actionTypes from "../actions/actionTypes";
 const initialState = {
   projects: [],
   selectedProjects: [],
+  remainingProjects: [],
   currentProject: null
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.HYDRATE_PROJECTS:
-      const projects = action.projects.filter(project => {
-        console.log(project);
-
+      const remainingProjects = action.projects.filter(project => {
         return !project.Rank;
       });
-
+      const selectedProjects = action.projects.filter(project => {
+        return project.Rank;
+      });
       return {
         ...state,
-        projects
+        projects: [...action.projects],
+        selectedProjects,
+        remainingProjects
       };
     case actionTypes.FIND_PROJECT:
       const project = state.projects.find(
