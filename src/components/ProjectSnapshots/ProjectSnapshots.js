@@ -27,7 +27,7 @@ const ProjectSnapshots = props => {
       );
     });
 
-  return <div className={styles.ProjectSnapshots}>{projectsContainer}</div>;
+  return <div>{projectsContainer}</div>;
 };
 
 export default withRouter(ProjectSnapshots);
