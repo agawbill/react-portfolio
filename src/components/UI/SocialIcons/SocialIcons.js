@@ -13,11 +13,11 @@ const SocialIcons = props => {
   const onClickHandler = type => {
     switch (type) {
       case "facebook":
-        window.open("https://www.facebook.com/agawbill", "_blank");
+        window.open("https://www.facebook.com/anthony.gawbill", "_blank");
         break;
 
       case "twitter":
-        window.open("https://www.twitter.com/agawbill", "_blank");
+        window.open("https://twitter.com/gawthegovernor", "_blank");
         break;
 
       case "github":
@@ -25,7 +25,10 @@ const SocialIcons = props => {
         break;
 
       case "linkedin":
-        window.open("https://www.linkedin.com/agawbill", "_blank");
+        window.open(
+          "https://www.linkedin.com/in/anthony-gawbill-78673042/",
+          "_blank"
+        );
         break;
       case "email":
         window.open("mailto:anthonyga@pcom.edu", "_blank");
