@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-flow: row;
-  width: inherit;
+  width: 40%;
   height: 200px;
   margin-bottom: 25px;
   cursor: pointer;
