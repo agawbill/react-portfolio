@@ -23,7 +23,10 @@ const ShareIcons = props => {
         break;
 
       case "linkedin":
-        window.open("https://www.linkedin.com/agawbill", "_blank");
+        window.open(
+          `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`,
+          "_blank"
+        );
         break;
       case "email":
         window.open("mailto:anthonyga@pcom.edu", "_blank");
