@@ -19,6 +19,8 @@ export const fetchContent = () => {
       await dispatch(hydrateSections(sectionsData));
       await dispatch(setContact());
       await dispatch(setAbout());
+      await dispatch(setBlogs());
+      await dispatch(setProjects());
       await dispatch(fetchContentSuccess());
     } catch (err) {
       await interceptor(err);
