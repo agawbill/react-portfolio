@@ -215,6 +215,9 @@
     background: none;
   }
   .Category {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     padding: 0px;
     /* text-align: none; */
     /* float: right; */

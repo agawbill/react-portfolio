@@ -25,10 +25,10 @@ const PostSnapshot = props => {
           </div>
         </div>
         <div className={styles.RightWrapper}>
-          <h4 className={styles.Category}>{props.category}</h4>
           <h4 className={styles.PostHeadline}>
             <ReactMarkdown source={props.headline} />
           </h4>
+          <h4 className={styles.Category}>{props.category}</h4>
 
           <span className={styles.PostSnapshotText}>
             <ReactMarkdown source={`${props.body.substring(0, 120)}...`} />
