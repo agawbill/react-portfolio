@@ -62,6 +62,16 @@ export const setContact = () => {
     type: actionTypes.SET_CONTACT
   };
 };
+export const setProjects = () => {
+  return {
+    type: actionTypes.SET_PROJECTS
+  };
+};
+export const setBlogs = () => {
+  return {
+    type: actionTypes.SET_BLOGS
+  };
+};
 export const findProject = projectId => {
   return {
     type: actionTypes.FIND_PROJECT,

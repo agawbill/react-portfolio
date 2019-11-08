@@ -13,3 +13,5 @@ export const RESET_PROJECT = "RESET_PROJECT";
 
 export const SET_ABOUT = "SET_ABOUT";
 export const SET_CONTACT = "SET_CONTACT";
+export const SET_BLOGS = "SET_BLOGS";
+export const SET_PROJECTS = "SET_PROJECTS";

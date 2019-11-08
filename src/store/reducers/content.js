@@ -4,6 +4,8 @@ const initialState = {
   sections: [],
   aboutData: null,
   contactData: null,
+  blogsData: null,
+  projectsData: null,
   loading: false
 };
 
@@ -44,6 +46,20 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         contactData: contact
+      };
+    case actionTypes.SET_BLOGS:
+      const blogs = state.sections.find(section => section.title === "Blog");
+      return {
+        ...state,
+        blogsData: blogs
+      };
+    case actionTypes.SET_PROJECTS:
+      const projects = state.sections.find(
+        section => section.title === "Projects"
+      );
+      return {
+        ...state,
+        projectsData: projects
       };
     default:
       return state;
