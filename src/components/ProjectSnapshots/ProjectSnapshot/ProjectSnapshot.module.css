@@ -87,10 +87,10 @@
   background-color: #e3b130;
 }
 
-/* @media (min-width: 995px) {
+@media (min-width: 995px) {
   .WidthProjects {
     margin: 15px;
 
-    width: 100%;
+    width: 33.3%;
   }
-} */
+}
