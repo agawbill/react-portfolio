@@ -23,7 +23,9 @@ const Projects = props => {
       <hr />
       <div className={styles.Projects}>
         <ProjectSnapshots projects={selectedProjects} />
+        <br />
         <hr />
+        <br />
         <ProjectSnapshots projects={remainingProjects} />
       </div>
     </>
