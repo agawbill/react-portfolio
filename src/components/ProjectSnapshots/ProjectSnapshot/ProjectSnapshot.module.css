@@ -1,7 +1,7 @@
 .ProjectSnapshot {
   display: flex;
   align-items: center;
-  flex-flow: row;
+  flex-flow: coulumn;
   width: inherit;
   height: 200px;
   margin-bottom: 25px;
