@@ -1,5 +1,4 @@
 .ProjectSnapshot {
-  position: relative;
   display: flex;
   align-items: center;
   flex-flow: row;
@@ -30,6 +29,7 @@
 }
 
 .ProjectBody {
+  position: relative;
   padding: 10px;
   height: 100%;
   width: 100%;
