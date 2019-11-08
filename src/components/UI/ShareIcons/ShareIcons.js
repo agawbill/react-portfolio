@@ -12,7 +12,10 @@ const ShareIcons = props => {
   const onClickHandler = type => {
     switch (type) {
       case "facebook":
-        window.open("https://www.facebook.com/agawbill", "_blank");
+        window.open(
+          `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`,
+          "_blank"
+        );
         break;
 
       case "twitter":
@@ -24,12 +27,16 @@ const ShareIcons = props => {
 
       case "linkedin":
         window.open(
-          `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`,
+          `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}&summary=Check out this post!`,
           "_blank"
         );
         break;
+
       case "email":
-        window.open("mailto:anthonyga@pcom.edu", "_blank");
+        window.open(
+          `mailto: ?&subject=Check out this post!&body=${window.location.href} Check out this post!`,
+          "_blank"
+        );
         break;
 
       default:
