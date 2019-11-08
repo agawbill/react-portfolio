@@ -5,7 +5,7 @@ import Header from "../../../components/UI/Header/Header";
 import SocialIcons from "../../../components/UI/SocialIcons/SocialIcons";
 
 const Contact = props => {
-  const contactData = useSelector(state => state.contactData.content);
+  const contactData = useSelector(state => state.content.contactData.content);
   return (
     <div className={styles.Contact}>
       <Header type="contact" title=" Contact" />
