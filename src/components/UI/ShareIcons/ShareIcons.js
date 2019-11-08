@@ -17,7 +17,7 @@ const ShareIcons = props => {
 
       case "twitter":
         window.open(
-          `https://www.twitter.com/share?url="${window.location.href}"&text="Check out this post!"`,
+          `http://twitter.com/share?text=Check out this post!&url=${window.location.href}`,
           "_blank"
         );
         break;
