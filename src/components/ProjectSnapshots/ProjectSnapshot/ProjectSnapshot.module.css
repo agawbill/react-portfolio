@@ -51,7 +51,7 @@
   /* cursor: inherit; */
 }
 
-.ProjectTitleText {
+.ProjectTitleContainer {
   position: absolute;
   /* font-size: 17px; */
   width: 85%;
@@ -68,12 +68,17 @@
   /* cursor: inherit; */
 }
 
-.ProjectTitleText span {
+.ProjectTitleText {
+  text-shadow: #2e2e2e 0 4px 5px;
   color: gold;
-  text-shadow: black 1px 1px 0;
+  border: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
   /* cursor: inherit; */
 }
 .ProjectDescText {
+  color: black;
   text-align: center;
   word-break: break-all;
   padding: 10px;
