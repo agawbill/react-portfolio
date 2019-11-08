@@ -1,7 +1,7 @@
 .ProjectSnapshot {
   display: flex;
   align-items: center;
-  flex-flow: column;
+  flex-flow: row;
   width: inherit;
   height: 200px;
   margin-bottom: 25px;
@@ -90,6 +90,6 @@
 @media (min-width: 995px) {
   .WidthProjects {
     margin: 15px;
-    width: 333px;
+    width: 33.3px;
   }
 }
