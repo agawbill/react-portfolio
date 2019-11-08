@@ -5,7 +5,9 @@ import Header from "../../../components/UI/Header/Header";
 import styles from "./Projects.module.css";
 
 const Projects = props => {
-  const sectionDescription = useSelector(state => state.content.projects);
+  const sectionDescription = useSelector(
+    state => state.content.projectData.content
+  );
   console.log(sectionDescription);
 
   const selectedProjects = useSelector(
