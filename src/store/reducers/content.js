@@ -55,12 +55,15 @@ const reducer = (state = initialState, action) => {
         blogsData: blogs
       };
     case actionTypes.SET_PROJECTS:
-      const projects = state.sections
-        .find(section => section.title === "Projects")
-        .filter(project => !project.Rank);
+      const projects = state.sections.find(
+        section => section.title === "Projects"
+      );
+
+      const regularProjects = projects.filter(project => !project.Rank);
+
       return {
         ...state,
-        projectsData: projects
+        projectsData: regularProjects
       };
     default:
       return state;
