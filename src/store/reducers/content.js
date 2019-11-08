@@ -59,11 +59,15 @@ const reducer = (state = initialState, action) => {
         section => section.title === "Projects"
       );
 
-      const regularProjects = projects.filter(project => !project.Rank);
+      const regularProjects = projects.filter(project => {
+        console.log(project);
+
+        return !project.Rank;
+      });
 
       return {
         ...state,
-        projectsData: regularProjects
+        projectsData: projects
       };
     default:
       return state;
