@@ -11,7 +11,6 @@
 }
 
 .Wrapper {
-  display: inline-block;
 }
 
 .WidthLanding {
@@ -95,5 +94,9 @@
   .WidthProjects {
     margin: 15px;
     width: 333px;
+  }
+
+  .Wrapper {
+    display: inline-block;
   }
 }
