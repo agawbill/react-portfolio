@@ -4,17 +4,9 @@ import styles from "./PostSnapshot.module.css";
 
 const PostSnapshot = props => {
   const date = new Date(props.dateCreated);
-  let wrapperClass = null;
-  let classes = [styles.PostSnapshot, styles.WidthLanding];
-  if (props.location !== undefined) {
-    if (props.location.pathname === "/projects") {
-      wrapperClass = styles.Wrapper;
-      classes = [styles.PostSnapshot, styles.WidthPosts];
-    }
-  }
 
   return (
-    <div className={styles.Wrapper}>
+    <>
       <div className={styles.PostSnapshot} onClick={props.clicked}>
         <div className={styles.PostSnapshotIndicator} />
         <div
@@ -43,7 +35,7 @@ const PostSnapshot = props => {
           </span>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

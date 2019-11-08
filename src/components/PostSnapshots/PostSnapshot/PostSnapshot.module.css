@@ -135,27 +135,6 @@
   background-color: #e3b130;
 }
 
-/* .PostWrapper {
-  display: flex;
-  flex-flow: column;
-}
-
-.TopWrapper {
-  order: 1;
-  display: flex;
-  flex-flow: row;
-}
-
-.Indicator {
-  background-color: red;
-  order: 1;
-}
-
-.Body {
-  background-color: blue;
-  order: 2;
-} */
-
 .RightWrapper {
   position: relative;
   display: none;
@@ -167,6 +146,31 @@
   /* background-color: rgba(192, 192, 192, 0.7); */
   order: 3;
 }
+
+/* .PostWrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.TopWrapper {
+  order: 1;
+  display: flex;
+  flex-flow: row;
+}
+
+.BottomWrapper {
+  order: 2;
+} */
+
+/* .Indicator {
+  background-color: red;
+  order: 1;
+}
+
+.Body {
+  background-color: blue;
+  order: 2;
+} */
 
 @media (min-width: 768px) {
   .PostSnapshot {
