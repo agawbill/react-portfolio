@@ -172,6 +172,10 @@
   order: 2;
 } */
 
+.Wrapper {
+  display: inline-block;
+}
+
 @media (min-width: 768px) {
   .PostSnapshot {
     text-align: left;
