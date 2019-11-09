@@ -8,12 +8,12 @@ const Blog = props => {
   const blogDescription = useSelector(state => state.content.blogsData.content);
 
   return (
-    <div>
+    <>
       <Header type="blogs" title=" Blogs" />
       {blogDescription}
       <hr />
       <PostSnapshots posts={posts} />
-    </div>
+    </>
   );
 };
 

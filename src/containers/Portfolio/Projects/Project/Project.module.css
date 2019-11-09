@@ -31,6 +31,16 @@
   width: 100%;
   height: 10%;
 }
+.DateName {
+  color: #606060;
+  /* text-shadow: #e0e0e0 1px 1px 0; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.NameHighlight {
+  color: silver;
+}
 
 @media (min-width: 1200px) {
   .ProjectDescription {

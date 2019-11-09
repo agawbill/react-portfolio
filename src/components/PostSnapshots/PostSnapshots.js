@@ -27,7 +27,7 @@ const PostSnapshots = props => {
       );
     });
 
-  return <>{postsContainer}</>;
+  return <div>{postsContainer}</div>;
 };
 
 export default withRouter(PostSnapshots);
