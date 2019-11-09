@@ -8,7 +8,6 @@ const Projects = props => {
   const sectionDescription = useSelector(
     state => state.content.projectsData.content
   );
-  console.log(sectionDescription);
 
   const selectedProjects = useSelector(
     state => state.projects.selectedProjects
@@ -23,9 +22,9 @@ const Projects = props => {
       <hr />
       <div className={styles.Projects}>
         <ProjectSnapshots projects={selectedProjects} />
-        <br />
-        <hr />
-        <br />
+      </div>
+      <hr />
+      <div className={styles.Projects}>
         <ProjectSnapshots projects={remainingProjects} />
       </div>
     </>
