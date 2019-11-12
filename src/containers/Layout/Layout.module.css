@@ -14,6 +14,8 @@
 }
 
 .container {
+  position: relative;
+  width: 100%;
   background-color: white;
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px#888;
@@ -26,8 +28,8 @@
     45deg,
     gold,
     gold 10px,
-    #363699 10px,
-    darkblue 20px
+    slategray 10px,
+    slategray 20px
   );
   height: 0.8vh;
   width: auto;

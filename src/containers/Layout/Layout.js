@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Layout.module.css";
+import Footer from "../../components/UI/Footer/Footer";
 import NavBar from "../../components/Navigation/NavBar/NavBar";
 import SideNav from "../../components/Navigation/SideNav/SideNav";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Layout = props => {
   let [openDrawer, setOpenDrawer] = useState(false);
@@ -18,6 +19,11 @@ const Layout = props => {
         <div className={styles.TopBar} />
         <NavBar open={openDrawer} toggleDrawer={drawerHandler} />
         {props.children}
+        {/* <Row style={{ position: "absolute", bottom: "0px", width: "100%" }}>
+          <Col>
+            <Footer />
+          </Col>
+        </Row> */}
       </Container>
     </>
   );

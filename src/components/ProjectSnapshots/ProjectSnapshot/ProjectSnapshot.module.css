@@ -22,7 +22,7 @@
 .ProjectSnapshotIndicator {
   height: 100%;
   width: 10px;
-  background-color: #363699;
+  background-color: slategray;
   order: 2;
   transition: background-color 0.3s ease-out;
   box-sizing: border-box;
