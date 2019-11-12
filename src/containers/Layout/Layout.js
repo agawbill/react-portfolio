@@ -19,18 +19,17 @@ const Layout = props => {
         <div className={styles.TopBar} />
         <NavBar open={openDrawer} toggleDrawer={drawerHandler} />
         {props.children}
-        <Row
+        {/* <Row
           style={{
             position: "absolute",
             bottom: "0px",
-            width: "100%",
-            margin: "200px!important"
+            width: "100%"
           }}
         >
           <Col>
             <Footer />
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );
