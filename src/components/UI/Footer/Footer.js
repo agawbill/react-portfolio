@@ -4,7 +4,9 @@ import styles from "./Footer.module.css";
 
 const Footer = props => {
   return (
-    <div className={styles.Footer} style={{ background: `url(${footerBg})` }} />
+    <div className={styles.Footer}>
+      <div className={styles.FooterText}>(C) Anthony Gawbill 2020</div>
+    </div>
   );
 };
 
