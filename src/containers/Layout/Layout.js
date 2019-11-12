@@ -24,7 +24,7 @@ const Layout = props => {
             position: "absolute",
             bottom: "0px",
             width: "100%",
-            marginTop: "20px"
+            marginTop: "20px!important"
           }}
         >
           <Col>
