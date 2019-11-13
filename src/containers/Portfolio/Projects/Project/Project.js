@@ -34,12 +34,22 @@ const Project = props => {
 
   let projectBody = <Spinner />;
 
+  let projectLink = null;
+
+  if (project.projectURL) {
+    projectLink = (
+      <a href={project.projectURL} target="blank">
+        Click Here to Visit
+      </a>
+    );
+  }
+
   if (project) {
     const date = new Date(project.created_at);
     projectBody = (
       <div className={styles.Project}>
         <Header type="projects" title={" " + project.title} />
-        <a href={project.projectURL}>Click Here to Visit</a>
+        {projectLink}
         <ShareIcons size="lg" />
         <span className={styles.DateName}>
           By <a href={`mailto:${project.email}`}>{project.user.username}</a> on{" "}
