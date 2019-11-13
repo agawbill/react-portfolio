@@ -6,6 +6,8 @@ import styles from "./Projects.module.css";
 
 const Projects = props => {
   const sectionTitle = useSelector(state => state.content.projectsData.title);
+  console.log(sectionTitle);
+
   const sectionDescription = useSelector(
     state => state.content.projectsData.content
   );
