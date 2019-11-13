@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Redirect } from "react-router-dom";
 import * as actions from "../../../../store/actions";
 import Spinner from "../../../../components/UI/Spinner/Spinner";
 import Gallery from "./Gallery/Gallery";
@@ -36,15 +35,14 @@ const Project = props => {
 
   let projectLink = null;
 
-  if (project.projectURL) {
-    projectLink = (
-      <a href={project.projectURL} target="blank">
-        Click Here to Visit
-      </a>
-    );
-  }
-
   if (project) {
+    if (project.projectURL) {
+      projectLink = (
+        <a href={project.projectURL} target="blank">
+          Click Here to Visit
+        </a>
+      );
+    }
     const date = new Date(project.created_at);
     projectBody = (
       <div className={styles.Project}>
