@@ -18,7 +18,7 @@ const Projects = props => {
   );
 
   useEffect(() => {
-    document.title = sectionTitle;
+    document.title = "Projects";
   });
 
   return (
