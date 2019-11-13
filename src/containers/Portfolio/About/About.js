@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import styles from "./About.module.css";
 import ReactMarkdown from "react-markdown";
@@ -8,6 +8,10 @@ import Spinner from "../../../components/UI/Spinner/Spinner";
 const About = props => {
   const about = useSelector(state => state.content.aboutData);
   const loading = useSelector(state => state.content.loading);
+
+  useEffect(() => {
+    document.title = about.title;
+  });
 
   let classes = styles.AboutLanding;
 

@@ -23,6 +23,10 @@ const BlogPost = props => {
     return () => dispatch(actions.resetBlog());
   }, [dispatch, props.location.search, props.history, post]);
 
+  useEffect(() => {
+    document.title = post.title;
+  });
+
   let postContainer = <Spinner />;
 
   if (post) {

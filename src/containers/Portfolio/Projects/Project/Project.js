@@ -26,6 +26,10 @@ const Project = props => {
     return () => dispatch(actions.resetProject());
   }, [dispatch, props.location.search, props.history, project]);
 
+  useEffect(() => {
+    document.title = project.title;
+  });
+
   let projectBody = <Spinner />;
 
   if (project) {

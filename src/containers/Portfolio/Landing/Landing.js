@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import banner from "../../../images/banner2.jpeg";
 import PostSnapshots from "../../../components/PostSnapshots/PostSnapshots";
@@ -12,6 +12,10 @@ const Landing = props => {
   const posts = useSelector(state => state.blogs.posts);
   const projects = useSelector(state => state.projects.projects);
   const about = useSelector(state => state.content.aboutData);
+
+  useEffect(() => {
+    document.title = "Anthony Gawbill";
+  });
 
   return (
     <>
