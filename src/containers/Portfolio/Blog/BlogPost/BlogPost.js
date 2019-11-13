@@ -24,8 +24,8 @@ const BlogPost = props => {
   }, [dispatch, props.location.search, props.history, post]);
 
   useEffect(() => {
-    if(post){
-    document.title = post.title;\
+    if (post) {
+      document.title = post.title;
     }
   }, [post]);
 
