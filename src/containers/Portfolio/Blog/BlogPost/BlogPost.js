@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Redirect } from "react-router-dom";
 import * as actions from "../../../../store/actions";
 import Spinner from "../../../../components/UI/Spinner/Spinner";
 import styles from "./BlogPost.module.css";

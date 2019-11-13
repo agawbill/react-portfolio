@@ -39,6 +39,7 @@ const Project = props => {
     projectBody = (
       <div className={styles.Project}>
         <Header type="projects" title={" " + project.title} />
+        <a href={project.projectURL}>Click Here to Visit</a>
         <ShareIcons size="lg" />
         <span className={styles.DateName}>
           By <a href={`mailto:${project.email}`}>{project.user.username}</a> on{" "}
