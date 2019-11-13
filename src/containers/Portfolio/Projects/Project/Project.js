@@ -28,7 +28,7 @@ const Project = props => {
 
   useEffect(() => {
     document.title = project.title;
-  });
+  }, [project]);
 
   let projectBody = <Spinner />;
 

@@ -25,7 +25,7 @@ const BlogPost = props => {
 
   useEffect(() => {
     document.title = post.title;
-  });
+  }, [post]);
 
   let postContainer = <Spinner />;
 
