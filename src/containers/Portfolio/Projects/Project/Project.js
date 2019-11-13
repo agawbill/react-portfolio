@@ -36,13 +36,12 @@ const Project = props => {
   let projectLink = null;
 
   if (project) {
-    if (project.projectURL) {
-      projectLink = (
+    let projectLink =
+      project.projectURL === null ? null : (
         <a href={project.projectURL} target="blank">
           Click Here to Visit
         </a>
       );
-    }
     const date = new Date(project.created_at);
     projectBody = (
       <div className={styles.Project}>
