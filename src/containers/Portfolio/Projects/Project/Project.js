@@ -33,8 +33,6 @@ const Project = props => {
 
   let projectBody = <Spinner />;
 
-  let projectLink = null;
-
   if (project) {
     let projectLink =
       project.projectURL === null ? null : (
