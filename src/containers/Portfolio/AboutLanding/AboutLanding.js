@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Memo } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./AboutLanding.module.css";
 import AboutHeadlines from "../../../components/AboutHeadlines/AboutHeadlines";
 
@@ -59,4 +59,4 @@ const AboutLanding = props => {
   );
 };
 
-export default Memo(AboutLanding);
+export default React.memo(AboutLanding);
