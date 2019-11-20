@@ -32,4 +32,4 @@ const PostSnapshots = props => {
   return <div>{postsContainer}</div>;
 };
 
-export default withRouter(PostSnapshots);
+export default React.memo(withRouter(PostSnapshots));
