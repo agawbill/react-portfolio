@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const AboutHeadlines = props => {
-  console.log("headlines");
-
   const headlines = [
     <span>
       <img src={props.imageUrl} align="left" alt="portrait of me" />{" "}
@@ -171,4 +169,4 @@ const AboutHeadlines = props => {
   return <>{headlines[props.index]}</>;
 };
 
-export default React.memo(AboutHeadlines);
+export default AboutHeadlines;

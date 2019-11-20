@@ -3,11 +3,10 @@ import styles from "./AboutLanding.module.css";
 import AboutHeadlines from "../../../components/AboutHeadlines/AboutHeadlines";
 
 const AboutLanding = props => {
-  const [arrayLength, setArrayLength] = useState(null);
-  const [marker, setMarker] = useState(1);
-  const [seconds, setSeconds] = useState(500);
-  const [index, setIndex] = useState(0);
-  console.log("about landing");
+  let [arrayLength, setArrayLength] = useState(null);
+  let [marker, setMarker] = useState(1);
+  let [seconds, setSeconds] = useState(500);
+  let [index, setIndex] = useState(0);
 
   // the marker inside the interval is going to always be
   // 1 behind  the marker outside of the interval.
@@ -59,4 +58,4 @@ const AboutLanding = props => {
   );
 };
 
-export default React.memo(AboutLanding);
+export default AboutLanding;

@@ -6,8 +6,6 @@ const PostSnapshots = props => {
   const postHandler = (id, slug) => {
     props.history.push({ pathname: `/blog/${slug}`, search: `?id=${id}` });
   };
-  console.log("snapshots");
-
   const postsContainer = props.posts
     .reverse()
     .slice(0, 8)
@@ -32,4 +30,4 @@ const PostSnapshots = props => {
   return <div>{postsContainer}</div>;
 };
 
-export default React.memo(withRouter(PostSnapshots));
+export default withRouter(PostSnapshots);
