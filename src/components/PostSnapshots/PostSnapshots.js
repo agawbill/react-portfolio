@@ -6,6 +6,8 @@ const PostSnapshots = props => {
   const postHandler = (id, slug) => {
     props.history.push({ pathname: `/blog/${slug}`, search: `?id=${id}` });
   };
+  console.log("snapshots");
+
   const postsContainer = props.posts
     .reverse()
     .slice(0, 8)
