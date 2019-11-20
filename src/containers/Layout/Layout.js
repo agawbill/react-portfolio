@@ -6,7 +6,7 @@ import SideNav from "../../components/Navigation/SideNav/SideNav";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Layout = props => {
-  let [openDrawer, setOpenDrawer] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
 
   const drawerHandler = () => {
     setOpenDrawer(!openDrawer);

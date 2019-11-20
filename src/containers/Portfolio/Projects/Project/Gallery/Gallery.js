@@ -3,8 +3,8 @@ import Viewer from "../../../../../components/Viewer/Viewer";
 import styles from "./Gallery.module.css";
 
 const Gallery = props => {
-  let [selectedImage, setSelectedImage] = useState(null);
-  let [openViewer, setOpenViewer] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [openViewer, setOpenViewer] = useState(false);
 
   const selectHandler = image => {
     setSelectedImage(image);

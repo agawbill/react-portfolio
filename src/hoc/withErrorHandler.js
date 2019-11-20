@@ -5,8 +5,8 @@ export let interceptor;
 
 export const withErrorHandler = WrappedComponent => {
   return props => {
-    let [error, setError] = useState(false);
-    let [errorMessage, setErrorMessage] = useState("");
+    const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
     interceptor = response => {
       setError(true);

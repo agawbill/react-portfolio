@@ -6,8 +6,8 @@ import Header from "../../../components/UI/Header/Header";
 import Spinner from "../../../components/UI/Spinner/Spinner";
 
 const AboutLanding = props => {
-  let [marker, setMarker] = useState(1);
-  let [seconds, setSeconds] = useState(1000);
+  const [marker, setMarker] = useState(1);
+  const [seconds, setSeconds] = useState(1000);
 
   let firstFade;
   let secondFade;
@@ -93,4 +93,4 @@ const AboutLanding = props => {
   );
 };
 
-export default AboutLanding;
+// export default AboutLanding;
