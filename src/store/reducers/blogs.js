@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.HYDRATE_BLOGS:
       return {
         ...state,
-        posts: [...action.blogs]
+        posts: [...action.blogs.reverse()]
       };
     case actionTypes.FIND_BLOG:
       const post = state.posts.find(post => post.id === action.blogId);
