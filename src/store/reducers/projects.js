@@ -20,7 +20,7 @@ const reducer = (state = initialState, action) => {
 
       return {
         ...state,
-        projects: [...action.projects],
+        projects: [...action.projects.reverse()],
         selectedProjects,
         remainingProjects
       };
