@@ -16,6 +16,8 @@ const reducer = (state = initialState, action) => {
       const selectedProjects = action.projects.filter(project => {
         return project.Rank;
       });
+      console.log(action.projects);
+
       return {
         ...state,
         projects: [...action.projects],

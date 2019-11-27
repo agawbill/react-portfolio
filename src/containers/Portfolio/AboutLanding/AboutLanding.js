@@ -35,7 +35,7 @@ const AboutLanding = props => {
     return () => clearInterval(interval);
   }, [marker, seconds, arrayLength]);
 
-  const headlinesLength = length => {
+  const getHeadlinesLength = length => {
     setArrayLength(length);
   };
 
@@ -50,7 +50,7 @@ const AboutLanding = props => {
       <div className={Fade === null ? styles.Fade : Fade.join(" ")}>
         <AboutHeadlines
           index={index}
-          length={headlinesLength}
+          length={getHeadlinesLength}
           imageUrl={props.imageUrl}
         />
       </div>

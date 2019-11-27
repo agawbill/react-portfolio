@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import ReactMarkdown from "react-markdown";
 import styles from "./PostSnapshot.module.css";
 
@@ -39,4 +39,4 @@ const PostSnapshot = props => {
   );
 };
 
-export default memo(PostSnapshot);
+export default PostSnapshot;
