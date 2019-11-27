@@ -17,12 +17,9 @@ const NavItems = props => {
       <NavItem close={props.close} link="/projects">
         Projects
       </NavItem>
-      <NavItem
-        close={props.close}
-        link="https://storage.cloud.google.com/www.anthonygawbill.com/anthony-resume.pdf"
-      >
+      <a href="https://storage.cloud.google.com/www.anthonygawbill.com/anthony-resume.pdf">
         Resume
-      </NavItem>
+      </a>
       <NavItem close={props.close} link="/contact">
         Contact
       </NavItem>
