@@ -6,8 +6,8 @@
 }
 
 .About img {
-  width: 15vw;
-  height: 40vh;
+  width: 40%;
+  height: 60%;
   margin-right: 10px;
   float: left;
 }
@@ -76,23 +76,11 @@
     height: 50%;
     width: 30%;
   }
-  .About img {
-    width: 25vw;
-    height: 40vh;
-    margin-right: 10px;
-    float: left;
-  }
 }
 @media (min-width: 770px) {
   .AboutLanding img {
     height: 50%;
     width: 30%;
-  }
-  .About img {
-    width: 20vw;
-    height: 40vh;
-    margin-right: 10px;
-    float: left;
   }
 }
 @media (min-width: 800px) {
@@ -100,34 +88,16 @@
     height: 50%;
     width: 30%;
   }
-  .About img {
-    width: 19vw;
-    height: 40vh;
-    margin-right: 10px;
-    float: left;
-  }
 }
 @media (min-width: 900px) {
   .AboutLanding img {
     height: 50%;
     width: 26%;
   }
-  .About img {
-    width: 18vw;
-    height: 40vh;
-    margin-right: 10px;
-    float: left;
-  }
 }
 @media (min-width: 1000px) {
   .AboutLanding img {
     height: 50%;
     width: 20%;
-  }
-  .About img {
-    width: 15vw;
-    height: 40vh;
-    margin-right: 10px;
-    float: left;
   }
 }
