@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import styles from "./AboutLanding.module.css";
 import AboutHeadlines from "../../../components/AboutHeadlines/AboutHeadlines";
 
@@ -35,9 +35,9 @@ const AboutLanding = props => {
     return () => clearInterval(interval);
   }, [marker, seconds, arrayLength]);
 
-  const getHeadlinesLength = length => {
+  const getHeadlinesLength = useCallback(length => {
     setArrayLength(length);
-  };
+  }, []);
 
   let Fade = null;
 
@@ -47,6 +47,7 @@ const AboutLanding = props => {
 
   return (
     <div className={styles.AboutLanding}>
+      {/* <img src={props.imageUrl} align="left" alt="portrait of me" /> */}
       <div className={Fade === null ? styles.Fade : Fade.join(" ")}>
         <AboutHeadlines
           index={index}

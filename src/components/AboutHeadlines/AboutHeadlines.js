@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import aboutHeader from "../../images/aboutHeader.png";
 
 const AboutHeadlines = props => {
   const headlines = [
@@ -166,7 +167,7 @@ const AboutHeadlines = props => {
     props.length(headlines.length);
   }, [props, headlines.length]);
 
-  return <>{headlines[props.index]}</>;
+  return <div>{headlines[props.index]}</div>;
 };
 
 export default AboutHeadlines;

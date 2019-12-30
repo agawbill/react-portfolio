@@ -3,15 +3,31 @@
   height: 100%;
   margin: auto;
 }
-
 .AboutLanding img {
   border-radius: 5%;
   margin-right: 15px;
   float: left;
-  height: 150px;
+  height: 200px;
   width: auto;
   opacity: 1;
 }
+
+.AboutLanding span {
+  padding: 10px;
+  overflow-y: auto;
+
+  font-family: Helvetica;
+
+  position: absolute;
+  font-size: 17px;
+  width: 97%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* 
+
 
 .AboutLanding span {
   padding: 10px;
@@ -45,7 +61,7 @@
 .AboutLanding h1 {
   text-align: center;
   color: gold;
-}
+} */
 
 .Fade {
   height: 0px;

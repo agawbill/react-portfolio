@@ -1,12 +1,21 @@
 import React from "react";
 import PostSnapshot from "./PostSnapshot/PostSnapshot";
+import styles from "./PostSnapshots.module.css";
 import { withRouter } from "react-router-dom";
 
 const PostSnapshots = props => {
+  let classes = styles.Posts;
+  if (props.location !== undefined) {
+    if (props.location.pathname === "/projects") {
+      classes = styles.Posts;
+    }
+  }
+
   const postHandler = (id, slug) => {
     props.history.push({ pathname: `/blog/${slug}`, search: `?id=${id}` });
   };
-  const postsContainer = props.posts.slice(0, 8).map(post => {
+
+  const postsContainer = props.posts.slice(0, 6).map(post => {
     return (
       <PostSnapshot
         image={post.images[0].url}
@@ -24,7 +33,7 @@ const PostSnapshots = props => {
     );
   });
 
-  return <div>{postsContainer}</div>;
+  return <div className={classes}>{postsContainer}</div>;
 };
 
 export default withRouter(PostSnapshots);

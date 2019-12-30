@@ -6,6 +6,8 @@ import {
   faBlog,
   faProjectDiagram
 } from "@fortawesome/free-solid-svg-icons";
+import projectHeader from "../../../images/projectHeader.png";
+import postHeader from "../../../images/postHeader.png";
 import styles from "./Header.module.css";
 
 const Header = props => {
@@ -35,22 +37,52 @@ const Header = props => {
       break;
     case "latest posts":
       headerBody = (
-        <>
+        <div
+          style={{
+            paddingTop: "35px",
+            paddingBottom: "20px",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            height: "200px",
+            maxHeight: "100%",
+            backgroundSize: "100% 100%",
+            backgroundImage: `url(${projectHeader})`,
+            lineHeight: "140px",
+            marginTop: "29px",
+            marginBottom: "29px"
+          }}
+        >
           <span className={styles.Icon}>
             <FontAwesomeIcon icon={faBlog} size="1x" />
           </span>
-          <span className={styles.Header2}>{props.title}</span>
-        </>
+          <span className={styles.Header4}>{props.title}</span>
+        </div>
       );
       break;
     case "latest projects":
       headerBody = (
-        <>
+        <div
+          style={{
+            paddingTop: "35px",
+            paddingBottom: "20px",
+            backgroundRepeat: "no-repeat",
+
+            backgroundPosition: "center",
+            height: "200px",
+            maxHeight: "100%",
+            // width: "100%",
+            backgroundSize: "100% 100%",
+            backgroundImage: `url(${projectHeader})`,
+            lineHeight: "140px",
+            marginTop: "29px",
+            marginBottom: "29px"
+          }}
+        >
           <span className={styles.Icon}>
             <FontAwesomeIcon icon={faProjectDiagram} size="1x" />
           </span>
-          <span className={styles.Header2}>{props.title}</span>
-        </>
+          <span className={styles.Header3}>{props.title}</span>
+        </div>
       );
       break;
     case "projects":

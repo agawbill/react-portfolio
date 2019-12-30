@@ -1,6 +1,17 @@
 .Layout {
 }
 
+.NavBarContainer {
+  background: rgb(186, 186, 186);
+  border-bottom: 1px solid gray;
+  color: black;
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
 .Banner {
   position: relative;
   max-width: 100%;
@@ -14,12 +25,12 @@
 }
 
 .container {
-  position: relative;
+  /* position: relative;
   width: 100%;
   background-color: white;
-  -moz-box-shadow: 0 0 5px #888;
-  -webkit-box-shadow: 0 0 5px#888;
-  box-shadow: 0 -10px white, 0 10px white, 0 0 10px #000;
+  /* -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888; */
+  /* box-shadow: 0 -10px white, 0 10px white, 0 0 10px #000; */
   min-height: 115vh;
 }
 
@@ -31,8 +42,9 @@
     #363699 10px,
     darkblue 20px
   );
+  /* background: navy; */
   height: 0.8vh;
   width: auto;
-  margin-left: -15px;
-  margin-right: -15px;
+  /* margin-left: -15px;
+  margin-right: -15px; */
 }

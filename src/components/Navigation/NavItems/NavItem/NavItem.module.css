@@ -28,7 +28,8 @@
     color: white;
     text-shadow: 2px 1px 0 #7a7a7a;
     height: 100%;
-    padding: 18px 10px;
+    padding: 17px 10px;
+    box-sizing: border-box;
   }
 
   .NavLink a:hover,

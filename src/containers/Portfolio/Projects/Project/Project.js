@@ -8,6 +8,7 @@ import ShareIcons from "../../../../components/UI/ShareIcons/ShareIcons";
 import Header from "../../../../components/UI/Header/Header";
 import { ResponsiveEmbed } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
+import { Container } from "react-bootstrap";
 
 const Project = props => {
   const project = useSelector(state => state.projects.currentProject);
@@ -67,7 +68,7 @@ const Project = props => {
     );
   }
 
-  return <>{projectBody}</>;
+  return <Container>{projectBody}</Container>;
 };
 
 export default Project;

@@ -4,8 +4,9 @@
 }
 
 .Icon {
+  display: none;
   font-size: 35px;
-  color: navy;
+  color: gold;
 }
 
 .Header1 {
@@ -17,6 +18,39 @@
   font-size: 35px;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: gold;
+  text-decoration-color: navy;
   width: 100%;
+}
+.Header3 {
+  color: white;
+  font-size: 29px;
+  font-weight: bold;
+
+  /* text-decoration: underline;
+  text-decoration-color: gold; */
+  width: 100%;
+}
+.Header4 {
+  color: white;
+  font-size: 29px;
+  font-weight: bold;
+
+  /* text-decoration: underline;
+  text-decoration-color: gold; */
+  width: 100%;
+}
+
+@media (min-width: 321px) {
+  .Icon {
+    display: inline-block;
+    font-size: 35px;
+    color: gold;
+  }
+  .Header3 {
+    font-size: 35px;
+  }
+
+  .Header4 {
+    font-size: 35px;
+  }
 }

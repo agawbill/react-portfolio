@@ -2,8 +2,8 @@
   display: flex;
   box-sizing: border-box;
   align-items: center;
-  background: rgba(186, 186, 186, 0.9);
-  border-bottom: 1px solid black;
+  background: rgb(186, 186, 186);
+  border-bottom: 1px solid gray;
   padding: 10px;
   font-weight: bold;
   color: black;
@@ -13,7 +13,6 @@
   margin-right: -15px;
   position: sticky;
   top: 0px;
-  left: 0px;
   z-index: 100;
 }
 

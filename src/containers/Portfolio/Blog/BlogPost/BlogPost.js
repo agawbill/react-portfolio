@@ -6,6 +6,7 @@ import styles from "./BlogPost.module.css";
 import ShareIcons from "../../../../components/UI/ShareIcons/ShareIcons";
 import Header from "../../../../components/UI/Header/Header";
 import ReactMarkdown from "react-markdown";
+import { Container } from "react-bootstrap";
 
 const BlogPost = props => {
   const post = useSelector(state => state.blogs.currentPost);
@@ -47,7 +48,7 @@ const BlogPost = props => {
     );
   }
 
-  return <>{postContainer}</>;
+  return <Container>{postContainer}</Container>;
 };
 
 export default BlogPost;

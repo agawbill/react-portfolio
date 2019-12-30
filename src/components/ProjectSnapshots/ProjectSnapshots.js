@@ -1,12 +1,13 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import styles from "./ProjectSnapshots.module.css";
 import ProjectSnapshot from "./ProjectSnapshot/ProjectSnapshot";
 
 const ProjectSnapshots = props => {
   const projectHandler = (id, slug) => {
     props.history.push({ pathname: `/projects/${slug}`, search: `?id=${id}` });
   };
-  const projectsContainer = props.projects.slice(0, 8).map(project => {
+  const projectsContainer = props.projects.slice(0, 6).map(project => {
     return (
       <ProjectSnapshot
         image={project.images[0].url}
@@ -23,7 +24,7 @@ const ProjectSnapshots = props => {
     );
   });
 
-  return <div>{projectsContainer}</div>;
+  return <div className={styles.Projects}>{projectsContainer}</div>;
 };
 
 export default withRouter(ProjectSnapshots);

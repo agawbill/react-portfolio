@@ -4,6 +4,7 @@ import styles from "./About.module.css";
 import ReactMarkdown from "react-markdown";
 import Header from "../../../components/UI/Header/Header";
 import Spinner from "../../../components/UI/Spinner/Spinner";
+import { Container } from "react-bootstrap";
 
 const About = props => {
   const about = useSelector(state => state.content.aboutData);
@@ -41,11 +42,13 @@ const About = props => {
   }
 
   return (
-    <div className={classes}>
-      <div>
-        <span>{body}</span>
+    <Container>
+      <div className={classes}>
+        <div>
+          <span>{body}</span>
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

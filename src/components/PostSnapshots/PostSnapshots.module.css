@@ -1,11 +1,12 @@
-/* .Projects {
+.Posts {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
 }
 
-@media (min-width: 995px) {
-  .Projects {
+@media (min-width: 768px) {
+  .Posts {
     flex-flow: row;
+    flex-wrap: wrap;
   }
-} */
+}

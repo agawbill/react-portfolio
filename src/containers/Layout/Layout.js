@@ -13,11 +13,13 @@ const Layout = props => {
   };
 
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <SideNav open={openDrawer} closeDrawer={drawerHandler} />
-      <Container className={styles.container}>
-        <div className={styles.TopBar} />
+      <div className={styles.TopBar} />
+      <div className={styles.NavBarContainer}>
         <NavBar open={openDrawer} toggleDrawer={drawerHandler} />
+      </div>
+      <div className={styles.container}>
         {props.children}
         {/* <Row
           style={{
@@ -27,11 +29,12 @@ const Layout = props => {
           }}
         >
           <Col>
-            <Footer />
+            
           </Col>
         </Row> */}
-      </Container>
-    </>
+      </div>
+      <Footer />
+    </div>
   );
 };
 

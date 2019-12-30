@@ -1,0 +1,16 @@
+.Projects {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .ProjectLanding {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+  .Projects {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+}

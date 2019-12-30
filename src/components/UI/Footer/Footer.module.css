@@ -1,20 +1,23 @@
 .Footer {
-  position: absolute;
-  display: inline-block;
-  box-shadow: inset 0px 7px 3px -3px white;
-  background-color: silver;
+  /* position: absolute; */
+  /* display: inline-block; */
+  /* box-shadow: inset 0px 7px 3px -3px white; */
+  background-color: navy;
   height: 60px;
   width: 100%;
   text-align: center;
-  bottom: 0px;
-  left: 0px;
+  line-height: 60px;
+  /* bottom: 0px;
+  left: 0px; */
 }
 
 .FooterText {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
-  text-shadow: #e0e0e0 1px 1px 0;
+  left: 50%; */
+  color: white;
+  /* text-shadow: black 1px 1px 0; */
+  margin: 0 auto;
   font-weight: bold;
-  transform: translateX(-50%) translateY(-50%);
+  /* transform: translateX(-50%) translateY(-50%); */
 }

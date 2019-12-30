@@ -3,7 +3,6 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
-  position: relative;
   height: 45vh;
   max-height: 100%;
   background-size: 100% 100%;
@@ -12,13 +11,33 @@
   background-position: center center;
 }
 
+.BannerContainer {
+  width: auto;
+  background-color: #fbd346;
+}
+
+.PostsContainer {
+  width: auto;
+  background-color: white;
+}
+
+@media (min-width: 995px) {
+  .Projects {
+    flex-flow: row;
+  }
+}
+.ProjectsContainer {
+  width: auto;
+  background-color: #ececec;
+}
+
 .NoPadding {
   padding: 0px;
 }
 
 @media (min-width: 768px) {
   .Banner {
-    box-shadow: 0 0 8px 8px white inset;
+    box-shadow: 0 0 8px 8px #fbd346 inset;
   }
   .NoPadding {
     padding-left: 7px;

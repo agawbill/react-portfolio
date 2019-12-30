@@ -1,11 +1,15 @@
 .NavText {
-  display: flex;
-  vertical-align: center;
-  font-family: "Livvic", sans-serif;
+  /* font-family: "Livvic", sans-serif; */
   font-size: 20px;
   margin-left: 10px;
   letter-spacing: 0.1em;
-  text-shadow: #e0e0e0 1px 1px 0;
+}
+
+.NavTextAnthony {
+  /* font-family: "Livvic", sans-serif; */
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-shadow: navy 1px 1px 0;
 }
 
 .NavText u {
@@ -24,4 +28,14 @@
   vertical-align: center;
   color: #ffffff;
   text-shadow: 4px 3px 0 #7a7a7a;
+}
+
+.FirstName {
+  font-weight: normal;
+  text-shadow: white 1px 1px 0;
+}
+.LastName {
+  font-weight: bold;
+  color: #fbd346;
+  text-shadow: navy 1px 1px 0;
 }
