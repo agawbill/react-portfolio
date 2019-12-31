@@ -5,7 +5,6 @@ import aboutHeader from "../../images/aboutHeader.png";
 const AboutHeadlines = props => {
   const headlines = [
     <span>
-      <img src={props.imageUrl} align="left" alt="portrait of me" />{" "}
       <strong>
         <i>Hi! </i>
       </strong>
