@@ -2,18 +2,19 @@
   display: flex;
   box-sizing: border-box;
   align-items: center;
-  background: rgb(186, 186, 186);
-  border-bottom: 1px solid gray;
+  /* background: rgb(186, 186, 186); */
+  background-color: lightgray;
+  /* border-bottom: 1px solid gray; */
   padding: 10px;
   font-weight: bold;
   color: black;
-  height: 60px;
+  height: 58.5px;
   width: auto;
   margin-left: -15px;
   margin-right: -15px;
-  position: sticky;
-  top: 0px;
-  z-index: 100;
+  /* position: sticky; */
+  /* top: 0px; */
+  /* z-index: 100; */
 }
 
 .Navbar nav {

@@ -6,7 +6,7 @@ import {
   faBlog,
   faProjectDiagram
 } from "@fortawesome/free-solid-svg-icons";
-import projectHeader from "../../../images/projectHeader.png";
+import projectHeader from "../../../images/projectHeader2.png";
 import postHeader from "../../../images/postHeader.png";
 import styles from "./Header.module.css";
 

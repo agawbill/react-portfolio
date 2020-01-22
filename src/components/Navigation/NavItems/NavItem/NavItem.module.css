@@ -20,13 +20,14 @@
   .NavLink {
     margin: 0;
     display: flex;
+    flex-flow: row;
     height: 100%;
     align-items: center;
   }
 
   .NavLink a {
-    color: white;
-    text-shadow: 2px 1px 0 #7a7a7a;
+    color: #2b2d2f;
+    /* text-shadow: 2px 1px 0 #7a7a7a; */
     height: 100%;
     padding: 17px 10px;
     box-sizing: border-box;
@@ -35,7 +36,8 @@
   .NavLink a:hover,
   .NavLink a:active,
   .NavLink a.active {
-    background-color: rgba(217, 217, 217, 0.5);
+    /* background-color: rgba(217, 217, 217, 0.5); */
+    background-color: #c2c5cc;
     text-decoration: none;
     text-shadow: #e0e0e0 1px 1px 0;
     color: black;

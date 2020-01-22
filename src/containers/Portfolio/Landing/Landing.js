@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import banner from "../../../images/banner3.png";
+import banner from "../../../images/banner4.png";
 import projectBackground3 from "../../../images/projectBackground3.png";
 import postBackground from "../../../images/postBackground.png";
 import aboutBorder from "../../../images/borderlanding.png";
@@ -23,7 +23,7 @@ const Landing = props => {
   return (
     <>
       <div className={styles.BannerContainer}>
-        <Container>
+        <Container fluid>
           <Row className={styles.NoPadding}>
             <Col className={styles.NoPadding}>
               <div
@@ -42,7 +42,7 @@ const Landing = props => {
       <div
         className={styles.PostsContainer}
         style={{
-          backgroundImage: `url(${postBackground})`,
+          // backgroundImage: `url(${postBackground})`,
           boxShadow: "0 4px 6px -6px #222"
         }}
       >

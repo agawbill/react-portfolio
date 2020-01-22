@@ -7,6 +7,8 @@
   display: none;
   font-size: 35px;
   color: gold;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
 }
 
 .Header1 {
@@ -22,7 +24,7 @@
   width: 100%;
 }
 .Header3 {
-  color: white;
+  color: #383838;
   font-size: 29px;
   font-weight: bold;
 
@@ -31,7 +33,7 @@
   width: 100%;
 }
 .Header4 {
-  color: white;
+  color: #383838;
   font-size: 29px;
   font-weight: bold;
 
