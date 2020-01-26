@@ -9,7 +9,7 @@ const Layout = props => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const drawerHandler = () => {
-    setOpenDrawer(!openDrawer);
+    setOpenDrawer(prevDrawer => !prevDrawer);
   };
 
   return (

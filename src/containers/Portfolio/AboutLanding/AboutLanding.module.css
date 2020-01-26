@@ -16,7 +16,7 @@
   padding: 10px;
   overflow-y: auto;
 
-  font-family: Helvetica;
+  font-family: "Myriad Pro", "Myriad", helvetica, arial, sans-serif;
 
   position: absolute;
   font-size: 17px;
@@ -78,11 +78,15 @@
 
 @media (min-width: 422px) {
   .AboutLanding span {
+    font-family: "Myriad Pro", "Myriad", helvetica, arial, sans-serif;
+
     font-size: 20px;
     width: 90%;
   }
 }
 @media (min-width: 518px) {
+  font-family: "Myriad Pro", "Myriad", helvetica, arial, sans-serif;
+
   .AboutLanding span {
     font-size: 20px;
     width: 85%;
@@ -91,6 +95,8 @@
 
 @media (min-width: 768px) {
   .AboutLanding span {
+    font-family: "Myriad Pro", "Myriad", helvetica, arial, sans-serif;
+
     font-size: 25px;
     width: 60%;
   }

@@ -1,0 +1,13 @@
+.Complete {
+  display: block;
+  margin-top: 5px;
+  color: green;
+  font-weight: bold;
+}
+
+.Error {
+  display: block;
+  margin-top: 5px;
+  color: red;
+  font-weight: bold;
+}

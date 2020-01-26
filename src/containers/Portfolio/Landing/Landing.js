@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import banner from "../../../images/banner4.png";
-import projectBackground3 from "../../../images/projectBackground3.png";
 import postBackground from "../../../images/postBackground.png";
-import aboutBorder from "../../../images/borderlanding.png";
+
 import PostSnapshots from "../../../components/PostSnapshots/PostSnapshots";
 import ProjectSnapshots from "../../../components/ProjectSnapshots/ProjectSnapshots";
 import styles from "./Landing.module.css";
 import AboutLanding from "../AboutLanding/AboutLanding";
 import Header from "../../../components/UI/Header/Header";
+import EmailForm from "../../../components/EmailForm/EmailForm";
 import { Container, Col, Row } from "react-bootstrap";
 
 const Landing = props => {
@@ -40,23 +40,29 @@ const Landing = props => {
       </div>
 
       <div
-        className={styles.PostsContainer}
+        className={styles.ContentContainer}
         style={{
           // backgroundImage: `url(${postBackground})`,
           boxShadow: "0 4px 6px -6px #222"
         }}
       >
-        <Container>
+        <Container fluid>
           <Row>
-            <Col lg={7}>
+            <Col lg={3} className={styles.ContactContainer}>
               <center>
-                <Header title="  Latest Posts" type="latest posts" />
+                <h2 className={styles.ContactForm}>Contact</h2>
               </center>
-              <PostSnapshots posts={posts} />
+              <EmailForm />
             </Col>
             <Col lg={5}>
               <center>
-                <Header title="  Latest Projects" type="latest projects" />
+                <Header title="   Latest Posts" type="latest posts" />
+              </center>
+              <PostSnapshots posts={posts} />
+            </Col>
+            <Col lg={4}>
+              <center>
+                <Header title="   Latest Projects" type="latest projects" />
               </center>
               <ProjectSnapshots projects={projects} />
             </Col>
