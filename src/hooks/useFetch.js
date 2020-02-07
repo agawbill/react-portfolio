@@ -4,7 +4,7 @@ import { keys } from "../config/keys";
 const initialState = {
   error: false,
   loading: false,
-  done: null
+  done: false
 };
 
 const fetchReducer = (fetchState, action) => {
@@ -37,7 +37,7 @@ const useFetch = () => {
     async (body, method) => {
       try {
         dispatchFetch({ type: "SEND" });
-        const data = await fetch(url, {
+        await fetch(url, {
           method,
           headers: {
             "Content-Type": "application/json"
@@ -45,15 +45,8 @@ const useFetch = () => {
           mode: "no-cors",
           body: JSON.stringify(body)
         });
-        console.log(data);
-
-        const response = await data.json();
-        if (response.ok) {
-          dispatchFetch({ type: "DONE" });
-        }
+        dispatchFetch({ type: "DONE" });
       } catch (err) {
-        console.log(err);
-
         dispatchFetch({ type: "ERROR" });
       }
     },

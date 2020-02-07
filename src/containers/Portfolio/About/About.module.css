@@ -6,6 +6,7 @@
 }
 
 .About img {
+  border-radius: 5px;
   width: 40%;
   height: 60%;
   margin-right: 10px;
@@ -72,6 +73,12 @@
   color: gold;
 }
 @media (min-width: 769px) {
+  .About img {
+    width: 20%;
+    height: 60%;
+    margin-right: 10px;
+    float: left;
+  }
   .AboutLanding img {
     height: 50%;
     width: 30%;

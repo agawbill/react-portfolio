@@ -3,14 +3,14 @@
   height: 100%;
   margin: auto;
 }
-.AboutLanding img {
+/* .AboutLanding img {
   border-radius: 5%;
   margin-right: 15px;
   float: left;
   height: 200px;
   width: auto;
   opacity: 1;
-}
+} */
 
 .AboutLanding span {
   padding: 10px;

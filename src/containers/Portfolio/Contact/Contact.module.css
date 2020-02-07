@@ -1,0 +1,10 @@
+.Email {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .Email {
+    margin: 0 auto;
+    width: 60%;
+  }
+}

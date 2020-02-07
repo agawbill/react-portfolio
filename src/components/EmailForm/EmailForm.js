@@ -1,7 +1,6 @@
 import React, { useState, useReducer } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Col from "react-bootstrap/Col";
 import styles from "./EmailForm.module.css";
@@ -72,14 +71,13 @@ const EmailForm = props => {
   const checkValidation = event => {
     event.preventDefault();
     if (
-      emailState.firstName === "" ||
-      emailState.lastName === "" ||
-      emailState.email === "" ||
-      emailState.message === "" ||
-      emailState.subject === "" ||
-      emailState.category === ""
+      emailState.firstName.trim() === "" ||
+      emailState.lastName.trim() === "" ||
+      emailState.email.trim() === "" ||
+      emailState.message.trim() === "" ||
+      emailState.subject.trim() === "" ||
+      emailState.category.trim() === ""
     ) {
-      console.log("hello");
       setValidated(false);
     } else {
       setValidated(true);
@@ -136,7 +134,7 @@ const EmailForm = props => {
               onChange={event =>
                 dispatchEmail({
                   type: "FIRSTNAME",
-                  value: event.target.value.trim()
+                  value: event.target.value
                 })
               }
             />
@@ -148,7 +146,7 @@ const EmailForm = props => {
               onChange={event =>
                 dispatchEmail({
                   type: "LASTNAME",
-                  value: event.target.value.trim()
+                  value: event.target.value
                 })
               }
             />
@@ -163,7 +161,7 @@ const EmailForm = props => {
           placeholder="Enter email"
           value={emailState.email}
           onChange={event =>
-            dispatchEmail({ type: "EMAIL", value: event.target.value.trim() })
+            dispatchEmail({ type: "EMAIL", value: event.target.value })
           }
         />
         <Form.Text className="text-muted">
@@ -178,7 +176,7 @@ const EmailForm = props => {
           placeholder="Subject"
           value={emailState.subject}
           onChange={event =>
-            dispatchEmail({ type: "SUBJECT", value: event.target.value.trim() })
+            dispatchEmail({ type: "SUBJECT", value: event.target.value })
           }
         />
       </Form.Group>
@@ -192,30 +190,31 @@ const EmailForm = props => {
           onChange={event =>
             dispatchEmail({
               type: "CATEGORY",
-              value: event.target.value.trim()
+              value: event.target.value
             })
           }
         >
           <option></option>
-          <option>...</option>
+          <option>Business related (hire me to build a website or app)</option>
+          <option>Employment opportunities</option>
+          <option>Lets meet!</option>
+          <option>Other/general inquiry</option>
         </Form.Control>
       </Form.Group>
-      <Form.Group>
+      <Form.Group controlId="exampleForm.ControlTextarea1">
         <Form.Label>Message</Form.Label>
 
-        <InputGroup>
-          <FormControl
-            as="textarea"
-            aria-label="With textarea"
-            value={emailState.message}
-            onChange={event =>
-              dispatchEmail({
-                type: "MESSAGE",
-                value: event.target.value.trim()
-              })
-            }
-          />
-        </InputGroup>
+        <FormControl
+          as="textarea"
+          aria-label="With textarea"
+          value={emailState.message}
+          onChange={event =>
+            dispatchEmail({
+              type: "MESSAGE",
+              value: event.target.value
+            })
+          }
+        />
       </Form.Group>
 
       <Button variant="primary" type="submit" style={{ width: "80px" }}>

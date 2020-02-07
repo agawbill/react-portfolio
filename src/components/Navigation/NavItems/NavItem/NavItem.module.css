@@ -1,9 +1,11 @@
 .NavLink {
+  display: flex;
   margin-left: auto;
   width: 100%;
 }
 
 .NavLink a {
+  align-items: stretch;
   color: black;
   height: 100%;
   box-sizing: border-box;

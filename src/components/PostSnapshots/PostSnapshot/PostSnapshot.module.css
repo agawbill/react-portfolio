@@ -60,8 +60,8 @@
 }
 
 @media (min-width: 768px) {
-  .PostSnapshot {
-    margin-left: 25px;
+  .AddMargin {
+    margin-left: 25px !important;
   }
   .PostWidth {
     width: 30%;

@@ -4,6 +4,13 @@ import styles from "./ProjectSnapshots.module.css";
 import ProjectSnapshot from "./ProjectSnapshot/ProjectSnapshot";
 
 const ProjectSnapshots = props => {
+  let classes = styles.Projects;
+  if (props.location !== undefined) {
+    if (props.location.pathname === "/projects") {
+      classes = [styles.Projects, styles.AddMargin].join(" ");
+    }
+  }
+
   const projectHandler = (id, slug) => {
     props.history.push({ pathname: `/projects/${slug}`, search: `?id=${id}` });
   };
@@ -24,7 +31,7 @@ const ProjectSnapshots = props => {
     );
   });
 
-  return <div className={styles.Projects}>{projectsContainer}</div>;
+  return <div className={classes}>{projectsContainer}</div>;
 };
 
 export default withRouter(ProjectSnapshots);

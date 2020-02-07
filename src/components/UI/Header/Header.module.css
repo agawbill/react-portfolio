@@ -41,6 +41,66 @@
   text-decoration-color: gold; */
   width: 100%;
 }
+.protector {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.ribbon {
+  font-size: 29px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+  width: 69%;
+
+  position: relative;
+  background: #bebebe;
+  color: whitesmoke;
+  text-align: center;
+  padding: 0.7em 0em; /* Adjust to suit */
+  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #a9a9a9;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbonContent:before,
+.ribbon .ribbonContent:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #808080 transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbonContent:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbonContent:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.dropShadow {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
+}
 
 @media (min-width: 321px) {
   .Icon {
@@ -54,5 +114,10 @@
 
   .Header4 {
     font-size: 35px;
+  }
+}
+@media (min-width: 992) {
+  .ribbon {
+    width: 75%;
   }
 }

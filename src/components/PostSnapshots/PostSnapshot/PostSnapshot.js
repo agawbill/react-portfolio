@@ -8,11 +8,27 @@ const PostSnapshot = props => {
   let classes = [styles.PostSnapshot];
   if (props.location !== undefined) {
     if (props.location.pathname === "/blog") {
-      console.log("hlo");
-
-      classes = [styles.PostSnapshot, styles.PostWidth];
+      classes = [
+        styles.PostSnapshot,
+        styles.PostWidth,
+        styles.AddMargin,
+        styles.NoPadding
+      ];
     }
   }
+
+  const body = count => {
+    const newBody = props.body.split(" ");
+    if (newBody.length < count) {
+      return newBody.join(" ");
+    }
+    const lastEl = newBody[count - 1].split("").slice(-1)[0];
+    const punctuation = [".", "!", ",", "?", ";"];
+    if (punctuation.indexOf(lastEl) !== -1) {
+      return `${newBody.slice(0, count + 1).join(" ")}...`;
+    }
+    return `${newBody.slice(0, count).join(" ")}...`;
+  };
 
   return (
     <div className={classes.join(" ")} onClick={props.clicked}>
@@ -32,7 +48,7 @@ const PostSnapshot = props => {
         <p>
           <i>{props.headline}</i>
         </p>
-        {props.body}
+        {body(25)}
       </div>
     </div>
   );

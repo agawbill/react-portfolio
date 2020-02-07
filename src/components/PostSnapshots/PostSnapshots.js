@@ -6,8 +6,8 @@ import { withRouter } from "react-router-dom";
 const PostSnapshots = props => {
   let classes = styles.Posts;
   if (props.location !== undefined) {
-    if (props.location.pathname === "/projects") {
-      classes = styles.Posts;
+    if (props.location.pathname === "/blog") {
+      classes = [styles.Posts, styles.AddMargin].join(" ");
     }
   }
 

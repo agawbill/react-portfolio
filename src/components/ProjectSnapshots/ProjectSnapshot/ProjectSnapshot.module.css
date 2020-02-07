@@ -53,8 +53,8 @@
   font-size: 20px;
 }
 @media (min-width: 768px) {
-  .ProjectSnapshot {
-    margin-left: 25px;
+  .AddMargin {
+    margin-left: 25px !important;
   }
   .ProjectWidth {
     width: 30%;

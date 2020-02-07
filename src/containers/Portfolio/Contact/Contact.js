@@ -21,7 +21,7 @@ const Contact = props => {
         {contactData}
         <SocialIcons size="2x" />
         <hr />
-        <div style={{ width: "800px", margin: "0 auto" }}>
+        <div className={styles.Email}>
           <EmailForm />
         </div>
       </div>

@@ -13,4 +13,8 @@
     flex-flow: row;
     flex-wrap: wrap;
   }
+  .AddMargin {
+    margin-left: -25px;
+    margin-right: -50px;
+  }
 }

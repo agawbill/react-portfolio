@@ -1,6 +1,6 @@
 import React from "react";
-import footerBg from "../../../images/banner1.jpeg";
 import styles from "./Footer.module.css";
+import SocialIcons from "../../UI/SocialIcons/SocialIcons";
 
 const Footer = props => {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import banner from "../../../images/banner4.png";
+import banner from "../../../images/banner5.png";
 import postBackground from "../../../images/postBackground.png";
 
 import PostSnapshots from "../../../components/PostSnapshots/PostSnapshots";

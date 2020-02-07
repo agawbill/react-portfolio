@@ -9,3 +9,8 @@
     flex-flow: row;
   }
 } */
+
+.SecondHeader {
+  text-align: center;
+  margin: 30px;
+}

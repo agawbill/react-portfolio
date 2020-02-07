@@ -28,10 +28,12 @@ const Projects = props => {
       <Header type="projects" title=" Projects" />
       {sectionDescription}
       <hr />
+      <h2 className={styles.SecondHeader}>Selected</h2>
       <div className={styles.Projects}>
         <ProjectSnapshots projects={selectedProjects} />
       </div>
       <hr />
+      <h2 className={styles.SecondHeader}>Others</h2>
       <div className={styles.Projects}>
         <ProjectSnapshots projects={remainingProjects} />
       </div>

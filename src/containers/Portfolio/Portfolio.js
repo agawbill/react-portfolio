@@ -13,6 +13,7 @@ const BlogPost = React.lazy(() => import("./Blog/BlogPost/BlogPost"));
 const Project = React.lazy(() => import("./Projects/Project/Project"));
 const Projects = React.lazy(() => import("./Projects/Projects"));
 const Contact = React.lazy(() => import("./Contact/Contact"));
+const Resume = React.lazy(() => import("../../components/Resume/Resume"));
 
 const Portfolio = props => {
   const loading = useSelector(state => state.content.loading);
@@ -45,6 +46,7 @@ const Portfolio = props => {
             <Route path="/blog" render={props => <Blog {...props} />} />
             <Route path="/projects" render={props => <Projects {...props} />} />
             <Route path="/contact" render={props => <Contact {...props} />} />
+            <Route path="/resume" render={props => <Resume {...props} />} />
             <Route path="/" render={() => <Landing />} />
           </Switch>
         </Suspense>

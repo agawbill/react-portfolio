@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Viewer from "../../../../../components/Viewer/Viewer";
 import styles from "./Gallery.module.css";
 
@@ -52,9 +52,9 @@ const Gallery = props => {
     }
   };
 
-  const viewerHandler = () => {
+  const viewerHandler = useCallback(() => {
     setOpenViewer(!setOpenViewer);
-  };
+  }, []);
 
   let imageViewer = null;
 
