@@ -93,7 +93,8 @@ const EmailForm = props => {
       category: emailState.category,
       message: emailState.message
     };
-    await sendRequest(body, "POST");
+
+    await sendRequest(body, "POST", "/email");
 
     dispatchEmail({ type: "RESET" });
   };

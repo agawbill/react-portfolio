@@ -1,5 +1,4 @@
 import { useReducer, useCallback } from "react";
-import { keys } from "../config/keys";
 
 const initialState = {
   error: false,
@@ -32,26 +31,23 @@ const fetchReducer = (fetchState, action) => {
 
 const useFetch = () => {
   const [fetchState, dispatchFetch] = useReducer(fetchReducer, initialState);
-  const url = keys.url;
-  const sendRequest = useCallback(
-    async (body, method) => {
-      try {
-        dispatchFetch({ type: "SEND" });
-        await fetch(url, {
-          method,
-          headers: {
-            "Content-Type": "application/json"
-          },
-          mode: "no-cors",
-          body: JSON.stringify(body)
-        });
-        dispatchFetch({ type: "DONE" });
-      } catch (err) {
-        dispatchFetch({ type: "ERROR" });
-      }
-    },
-    [url]
-  );
+
+  const sendRequest = useCallback(async (body, method, url) => {
+    try {
+      dispatchFetch({ type: "SEND" });
+      await fetch(url, {
+        method,
+        headers: {
+          "Content-Type": "application/json"
+        },
+        mode: "no-cors",
+        body: JSON.stringify(body)
+      });
+      dispatchFetch({ type: "DONE" });
+    } catch (err) {
+      dispatchFetch({ type: "ERROR" });
+    }
+  }, []);
   return {
     sendRequest,
     done: fetchState.done,
